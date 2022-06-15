@@ -1,29 +1,29 @@
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 header{
-    background-color: rgb(188, 188, 188);
+    background-color: silver;
 }
+
 nav a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 200%;
-    color: black;
-    text-decoration: none;
-}
-#name{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     color: black;
+    text-decoration: none;
 }
+
+
 /* 
-@media screen and (min-width: 400px) {
-    body{
-        background-color: red;
-    }
-} */
-/* 
-@media screen and (min-width: 900px) {
-    body{
-        background-color: rgb(255, 255, 255);
-    }
+nav {
+    height: 4em;
+    width: 100%;
+    background-color: #c6812f;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+    text-decoration: none;
 } */

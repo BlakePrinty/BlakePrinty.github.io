@@ -8,10 +8,6 @@ nav{
     background-color: rgb(255, 255, 255);
 }
 
-nav a {
-    
-}
-
 @media screen and (min-width: 400px) {
     body{
         background-color: red;

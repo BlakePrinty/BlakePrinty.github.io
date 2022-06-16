@@ -19,11 +19,11 @@ header {
     height: 100vh;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(18, 18, 18));
     position: fixed;
+    animation: fadeIn 2s;
 }
 
 #logo {
     background-color: rgb(0, 0, 0);
-    animation: fadeIn 5s;
 }
 
 .menu a {

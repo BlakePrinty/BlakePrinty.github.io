@@ -19,7 +19,6 @@ header {
     height: 100vh;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(18, 18, 18));
     position: fixed;
-    /* animation: fadeIn 2s; */
 }
 
 .menu a {
@@ -53,33 +52,18 @@ header {
 
 .intro {
     margin-left: 20%;
-    width: 1000px;
+    width: 100%;
+    margin-top: 15%;
 }
 
 .intro h1 {
     font-size: 100px;
-    margin-top: 300px;
     text-align: left;
     color: rgb(209, 178, 0);
     letter-spacing: 2px;
     text-shadow: .08em .08em 0 rgb(0, 0, 0);
-    /* animation: fadeIn 3s; */
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-/* 
-.intro h1:hover {
-    transition: 0.5s;
-    letter-spacing: 4px;
-} */
 
 .intro h3 {
     color: rgb(255, 255, 255);
@@ -87,18 +71,16 @@ header {
     font-size: 50px;
     letter-spacing: 1px;
     text-align: left;
-    /* animation: fadeIn 3s; */
 }
 
-/* About me styling */
 .about {
     margin-left: 20%;
-    width: 800px;
+    width: 70%;
+    margin-top: 15%;
 }
 
 .about h1 {
     font-size: 100px;
-    margin-top: 300px;
     text-align: left;
     color: rgb(209, 178, 0);
     letter-spacing: 2px;
@@ -114,15 +96,15 @@ header {
     text-align: left;
 }
 
-/* About me styling */
+
 .skills {
     margin-left: 20%;
-    width: 800px;
+    width: 70%;
+    margin-top: 15%;
 }
 
 .skills h1 {
     font-size: 100px;
-    margin-top: 300px;
     text-align: left;
     color: rgb(209, 178, 0);
     letter-spacing: 2px;
@@ -138,18 +120,14 @@ header {
     text-align: left;
 }
 
-/* Projects */
-
 .projects {
-    padding-left: 20%;
-    padding-right: 20%;
-    width: 100%;
+    margin-left: 20%;
+    width: 70%;
+    margin-top: 15%;
 }
 
 .projects h1 {
     font-size: 100px;
-    padding-bottom: 30px;
-    margin-top: 300px;
     text-align: left;
     color: rgb(209, 178, 0);
     letter-spacing: 2px;
@@ -162,20 +140,19 @@ header {
     justify-content: flex-start;
     align-items: center;
     height: 300px;
+    margin-top: 15px;
 }
 
-.projects-flex a{
+.projects-flex a {
     margin-left: 5rem;
 }
 
-.projects-flex h2{
-    color:rgb(209, 178, 0);
+.projects-flex h2 {
+    color: rgb(209, 178, 0);
     text-shadow: .08em .08em 0 rgb(0, 0, 0);
     letter-spacing: 1px;
     margin-left: 5rem;
 }
-
-/* CONTACT PAGE */
 
 .contact-me {
     padding-left: 20%;
@@ -201,13 +178,13 @@ header {
     height: 300px;
 }
 
-.contact-links a{
+.contact-links a {
     margin-left: 5rem;
 }
 
-.contact-links h2{
+.contact-links h2 {
     margin-top: 20px;
-    color:rgb(209, 178, 0);
+    color: rgb(209, 178, 0);
     text-shadow: .08em .08em 0 rgb(0, 0, 0);
     letter-spacing: 1px;
     margin-left: 5rem;

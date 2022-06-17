@@ -17,7 +17,7 @@ header {
 .menu {
     width: 15%;
     height: 100vh;
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(18, 18, 18));
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(10, 10, 10));
     position: fixed;
 }
 
@@ -27,15 +27,15 @@ header {
     font-size: 18px;
     letter-spacing: 2px;
     display: list-item;
-    padding: 20px;
-    border-top: 1px solid black;
+    padding: 30px;
+    border-top: 1px solid rgb(15, 15, 15);
     border-bottom: 1px solid black;
 }
 
 .menu a:hover {
     background-color: rgb(209, 178, 0);
     transition: 0.5s;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     text-transform: uppercase;
 }
 

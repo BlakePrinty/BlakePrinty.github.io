@@ -19,7 +19,7 @@ header {
     height: 100vh;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(18, 18, 18));
     position: fixed;
-    animation: fadeIn 2s;
+    /* animation: fadeIn 2s; */
 }
 
 #logo {
@@ -62,12 +62,17 @@ header {
     color: rgb(209, 178, 0);
     letter-spacing: 2px;
     text-shadow: .08em .08em 0 rgb(0, 0, 0);
-    animation: fadeIn 3s;
+    /* animation: fadeIn 3s; */
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% {opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .intro h1:hover {
@@ -81,7 +86,7 @@ header {
     font-size: 50px;
     letter-spacing: 1px;
     text-align: left;
-    animation: fadeIn 3s;
+    /* animation: fadeIn 3s; */
 }
 
 /* About me styling */
@@ -130,4 +135,32 @@ header {
     font-size: 25px;
     letter-spacing: 1px;
     text-align: left;
+}
+
+/* Projects */
+
+.projects {
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.projects h1 {
+    font-size: 100px;
+    padding-bottom: 30px;
+    margin-top: 300px;
+    text-align: left;
+    color: rgb(209, 178, 0);
+    letter-spacing: 2px;
+    text-shadow: .08em .08em 0 rgb(0, 0, 0);
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    justify-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 1400px;
+    color: white;
 }

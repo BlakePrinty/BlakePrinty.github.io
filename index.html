@@ -6,30 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blake Printy</title>
-    <link rel="shortcut icon" href="imgs/bp-logo-gold.png">
+    <link rel="shortcut icon" href="imgs/bp-logo-white.png">
+
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/layout.css">
 </head>
-
 <body>
-    <header>
-        <div class="menu">
-            <div id="logo">
-                <a href="https://blakeprinty.github.io/">
-                    <img src="imgs/bp-logo-white-gold.png" alt="Personal Logo Gif" width="100" height="100">
-                </a>
-            </div>
-            <a href="https://blakeprinty.github.io/about.html">About</a>
-            <a href="https://blakeprinty.github.io/skills.html">My Skills</a>
-            <a href="https://blakeprinty.github.io/projects.html">Projects</a>
-            <a href="https://blakeprinty.github.io/contact.html">Contact</a>
-        </div>
-        <div class="intro">
+    <nav>
+        <div class="container">
             <h1>Blake Printy</h1>
-            <h3>Software developer</h3>
+
+            <div class="menu">
+                <a href="/index.html" class="active">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/contact.html">Contact</a>
+                
+            </div>
+            
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
         </div>
+    </nav>
 
+    <header>
+        <div class="home-page">
+            <h1>Hello World!</h1>
+
+            <div class="short-bio">
+                <p>
+                    My name is Blake Printy and I am a full-stack java developer.
+                    I studied Computer Science at the University of Maryland, Baltimore County
+                    before enrolling in WeCanCodeIT's full time coding bootcamp.
+
+                </p>
+            </div>
+            
+            <a href="/about.html" class="button">Read More ➜</a>
+        </div>
     </header>
-</body>
 
+    <footer>
+        <div class="footer-container">
+            <h3>© 2022 Blake Printy</h3>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
 </html>

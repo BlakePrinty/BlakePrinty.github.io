@@ -2,6 +2,7 @@
     --primary: #ff3838;
     --light: #EEEEEE;
     --dark: #212121;
+    --darkish: #2d2d2d;
 }
 
 * {
@@ -12,7 +13,7 @@
 }
 
 body {
-    background-color: #2d2d2d;
+    background-color: var(--darkish);
 }
 
 /* NAV BAR */
@@ -192,14 +193,94 @@ h1 {
 /* Projects */
 
 .projects {
-    margin-top: 150px;
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 150px;
     text-align: center;
     letter-spacing: 2px;
+    align-items: center;
 }
 
 .projects h1 {
     font-size: 40px;
+}
+
+.projects-flex {
+    height: 30%;
+    margin-top: 40px;
+    background-color: var(--dark);
+}
+
+.proj-button {
+    background-color: var(--darkish);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 2px;
+    cursor: pointer;
+}
+
+.proj-button:hover {
+    background-color: var(--primary);
+    letter-spacing: 4px;
+    transition: 0.4s;
+}
+
+.about-me {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 150px;
+    text-align: center;
+    letter-spacing: 2px;
+    align-items: center;
+}
+
+.about-me h1 {
+    font-size: 40px;
+}
+
+.about-me-flex {
+    height: 30%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.spacer {
+    height: 250px;
+}
+
+.about-projects {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 150px;
+    text-align: center;
+    letter-spacing: 2px;
+    align-items: center;
+}
+
+.about-projects h1 {
+    font-size: 40px;
+}
+
+.about-projects-flex {
+    height: 30%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+    color: var(--light);
+    background-color: var(--dark);
 }

@@ -1,52 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blake Printy</title>
-    <link rel="shortcut icon" href="imgs/bp-logo-gold.png">
-
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Blake Printy - Portfolio</title>
+    <link rel="shortcut icon" href="/imgs/logo.png">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
 </head>
+
 <body>
-    <nav>
-        <div class="container">
-            <h1>Blake Printy</h1>
 
-            <div class="menu">
-                <a href="/index.html">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/projects.html" class="active">Projects</a>
-                <a href="/contact.html">Contact</a>
-                
+    <section class="header">
+        <nav>
+            <a href="/"> <img src="/imgs/logo.png"> </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/projects.html">PROJECTS</a></li>
+                    <li><button type="submit" onclick="showSocials()">CONTACT</button></li>
+                </ul>
             </div>
-            
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <section class="main">
+                <h1>Review Site</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas sed obcaecati inventore reiciendis. Magnam mollitia voluptas, esse eligendi reprehenderit cumque tenetur aut unde quo similique, nemo suscipit doloribus soluta!
+                </p>
+                <h1>Virtual Pet</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, enim ratione vitae iusto ducimus id! Ipsum praesentium quidem corporis pariatur sed nobis, velit tempore, debitis recusandae quibusdam fugiat sequi. Repudiandae!
+                </p>
+                <h1>Wordle Solver</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque explicabo ut, voluptate quaerat quis laudantium obcaecati dignissimos ratione cupiditate similique ducimus error maiores, dicta iusto veritatis ea, ullam perspiciatis. Debitis?
+                </p>
+            </section>
         </div>
-    </nav>
 
-    <header>
-        <div class="projects">
-            <h1>Projects</h1>
-
-            
+        <div class="popup" id="popup">
+            <img src="/imgs/logo.png" id="image" height="80" width="auto">
+            <h2>Blake Printy</h2>
+            <a href="https://github.com/BlakePrinty" target="_blank"><img src="/imgs/github-icon.jpg" id="github"
+                    height="80" width="auto"></a>
+            <a href="https://www.linkedin.com/in/blake-printy/" target="_blank"><img src="/imgs/linkedin.png"
+                    id="github" height="80" width="auto"></a>
+            <button type="button" onclick="hideSocials()">Dismiss</button>
         </div>
-    </header>
 
-    <footer>
-        <div class="footer-container">
-            <h3>© 2022 Blake Printy</h3>
-        </div>
-    </footer>
+    </section>
 
+    <section class="footer">
+        <footer>
+            <h1>© 2022 Blake Printy</h1>
+        </footer>
+    </section>
 
-    <script src="main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>

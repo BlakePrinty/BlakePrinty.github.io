@@ -8,7 +8,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/imgs/wallpaperflare.com_wallpaper.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/imgs/wallpaperflare.com_wallpaper.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -39,7 +39,8 @@ nav img {
     position: relative;
 }
 
-.nav-links ul li a, button {
+.nav-links ul li a,
+button {
     color: white;
     background-color: transparent;
     border: none;
@@ -79,10 +80,7 @@ nav img {
 }
 
 .text-box .main h1 {
-    border: 1px solid #d16839;
-    -webkit-box-shadow: 0px 0px 6px #d16839;
-    -moz-box-shadow: 0px 0px 6px #d16839;
-    box-shadow: 0px 0px 6px #d16839;
+    border-bottom: 1px solid #d16839;
 }
 
 .text-box p {
@@ -91,6 +89,10 @@ nav img {
     color: white;
 }
 
+span {
+    color: #d16839;
+    font-size: 36px;
+}
 
 .btn {
     display: inline-block;
@@ -217,3 +219,110 @@ footer h1 {
     color: white;
     font-size: 14px;
 }
+
+/* Projects spinner */
+
+.projects {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*72deg)) translateZ(300px);
+    /* The deg above is (360/numOfElements) */
+}
+
+.slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider span:hover img {
+    transform: translateY(-50px) scale(1.2);
+}
+
+/* Projects */
+
+#projects {
+    height: 250vh;
+    background-color: #211d35;
+    color: white;
+    text-align: center;
+}
+
+#projects h1, p {
+    padding-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#projects h1 {
+    font-size: 50px;
+}
+
+#projects p {
+    font-size: 22px;
+}
+
+#album-site {
+    height: 50vh;
+    background-color: #211d35;
+}
+
+#cookie-clicker {
+    height: 50vh;
+    background-color: #211d35;
+}
+
+#review-site {
+    height: 50vh;
+    background-color: #211d35;
+}
+
+#virtual-pet {
+    height: 50vh;
+    background-color: #211d35;
+}
+
+#spinning-button {
+    font-size: 100px;
+}
+
+.projects img:hover {
+    cursor: pointer;
+}
+

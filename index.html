@@ -2,58 +2,81 @@
 <html>
 
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Blake Printy - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blake Printy</title>
     <link rel="shortcut icon" href="/imgs/logo.png">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
 </head>
 
 <body>
 
-    <section class="header">
-        <nav>
-            <a href="/"> <img src="/imgs/logo.png"> </a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/about.html">ABOUT</a></li>
-                    <li><a href="/projects.html">PROJECTS</a></li>
-                    <li><button type="submit" onclick="showSocials()">CONTACT</button></li>
-                </ul>
+    <div class="toggleSwitch">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <header class="header">
+        <h1 class="name"> Blake Printy </h1>
+        <h2 class="role"> Full-Stack Developer </h2>
+
+        <img class="down-arrow" src="/imgs/down-arrow-svgrepo-com (1).svg">
+    </header>
+
+    <section class="about">
+        <h1 class="title">About Me</h1>
+
+        <p>
+            My name is Blake Printy, I studied Computer Science at the University of Maryland, Baltimore County. I then
+            joined WeCanCodeIT's full time bootcamp. I love learning new technologies and pushing myself to become
+            a better developer.
+        </p>
+
+        <div class="about-container">
+            <h1>Languages</h1>
+            <div class="languages">
+                <div class="language" id="java">Java</div>
+                <div class="language" id="html">HTML</div>
+                <div class="language" id="css">CSS</div>
+                <div class="language" id="javascript">JavaScript</div>
+                <div class="language" id="python">Python</div>
+                <div class="language" id="cpp">C++</div>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
 
-        <div class="text-box">
-            <h1>Hello World!</h1>
-            <p>My name is <span>Blake Printy</span> and I am a full-stack java developer. I studied Computer Science at the
-                University of Maryland, Baltimore County before enrolling in WeCanCodeIT's full time coding bootcamp.
-            </p>
-            <a href="/about.html" class="btn">Read More</a>
+            <h1>Skills</h1>
+            <div class="labels">
+                <div class="label" id="restapi">REST API's</div>
+                <div class="label" id="spring">Spring</div>
+                <div class="label" id="thymeleef">Thymeleef</div>
+                <div class="label" id="mvc">MVC</div>
+                <div class="label" id="oop">OOP</div>
+                <div class="label" id="tdd">TDD</div>
+                <div class="label" id="agile">Agile</div>
+                <div class="label" id="databases">Relational Databases</div>
+                <div class="label" id="github">GitHub</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects">
+        <h1 class="title">Projects</h1>
+
+        <div class="habitrack">
+            <h1>HabiTrack</h1>
         </div>
 
-        <div class="popup" id="popup">
-            <img src="/imgs/logo.png" id="image" height="80" width="auto">
-            <h2>Blake Printy</h2>
-            <a href="https://github.com/BlakePrinty" target="_blank"><img src="/imgs/github-icon.jpg" id="github" height="80" width="auto"></a>
-            <a href="https://www.linkedin.com/in/blake-printy/" target="_blank"><img src="/imgs/linkedin.png" id="github" height="80" width="auto"></a>
-            <button type="button" onclick="hideSocials()">Dismiss</button>
+        <div class="albumsongs">
+            <h1>Album Songs</h1>
         </div>
 
     </section>
 
-    <section class="footer">
-        <footer>
-            <h1>© 2022 Blake Printy</h1>
-        </footer>
-    </section>
+    <footer class="footer">
+        <p> © Copyright 2022. Made by Blake Printy </p>
+    </footer>
 
     <script src="/js/main.js"></script>
 </body>

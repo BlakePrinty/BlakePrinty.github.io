@@ -80,11 +80,18 @@
     padding: 0;
     margin: 0;
     font-family: Apercu;
+    text-align: center;
+}
+
+.about, .projects, footer {
+    animation: fadeIn 3s;
 }
 
 /* Styling for Header */
 
-header, .about, .projects {
+header,
+.about,
+.projects {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -127,15 +134,16 @@ header h2 {
 
 /* Styling for About Section */
 
-.about, .projects {
-    justify-content: flex-start;
+.about,
+.projects {
+    justify-content: center;
     text-align: center;
-    height: 60vh;
+    height: 100vh;
 
     padding-left: 15%;
     padding-right: 15%;
 
-    padding-top: 40px;
+    padding-top: 15vh;
 }
 
 .about p {
@@ -154,7 +162,8 @@ header h2 {
     margin-top: 40px;
 }
 
-.language, .label {
+.language,
+.label {
     font-family: ApercuBold;
     font-size: 14px;
     padding: 3px 10px;
@@ -164,7 +173,8 @@ header h2 {
     background-color: #171717;
 }
 
-.languages, .labels {
+.languages,
+.labels {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
@@ -172,7 +182,8 @@ header h2 {
     justify-content: center;
 }
 
-.language:hover, .label:hover {
+.language:hover,
+.label:hover {
     transform: translateY(-1px) translateX(1px);
     cursor: pointer;
 }
@@ -216,7 +227,7 @@ header h2 {
 }
 
 #mvc {
-    background-color: darkgoldenrod;
+    background-color: rgb(11, 164, 184);
 }
 
 #oop {
@@ -239,15 +250,27 @@ header h2 {
     background-color: black;
 }
 
+#singlePageApp {
+    background-color: rgb(242, 0, 255);
+}
 
+/* Styling for Projects */
 
+.project {
+    height: 40vh;
+    width: 90%;
+    /* background-color: red; */
+}
 
+.project * {
+    /* border: red solid 1px; */
+    padding: 5px;
+}
 
-
-
-
-
-
+.preview img {
+    height: 240px;
+    width: auto;
+}
 
 
 

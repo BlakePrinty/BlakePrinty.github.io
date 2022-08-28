@@ -12,25 +12,30 @@ let darkMode = false;
 darkModeButton.addEventListener("click", () => {
     if (pageHeader.classList.contains("dark")) {
 
-        pageHeader.classList.remove("dark");
-        toggleSwitchDiv.classList.remove("dark");
-        pageFooter.classList.remove("dark");
-        downArrow.classList.remove("white");
-        aboutMe.classList.remove("dark");
-        projects.classList.remove("dark");
+        darkModeOn();
 
     } else {
 
-        pageHeader.classList.add("dark");
-        toggleSwitchDiv.classList.add("dark");
-        pageFooter.classList.add("dark");
-        downArrow.classList.add("white");
-        aboutMe.classList.add("dark");
-        projects.classList.add("dark");
+        darkModeOff();
 
     }
 });
 
-function makeDarkMode() {
-    
+
+function darkModeOn() {
+    pageHeader.classList.remove("dark");
+    toggleSwitchDiv.classList.remove("dark");
+    pageFooter.classList.remove("dark");
+    downArrow.classList.remove("white");
+    aboutMe.classList.remove("dark");
+    projects.classList.remove("dark");
+}
+
+function darkModeOff() {
+    pageHeader.classList.add("dark");
+    toggleSwitchDiv.classList.add("dark");
+    pageFooter.classList.add("dark");
+    downArrow.classList.add("white");
+    aboutMe.classList.add("dark");
+    projects.classList.add("dark");
 }

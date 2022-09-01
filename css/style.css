@@ -176,72 +176,56 @@
     transform: translateY(-2px) translateX(2px);
 }
 
-#java {
+#java, #python, #css, #api, #springboot, #databases, #thymeleef, #tdd {
     background-color: #002b5b;
 }
 
-#javascript {
+#javascript, #html, #cpp, #restcontrollers, #mvc, #singlepage, #agile, #github {
     background-color: #5b0000;
 }
 
-#python {
-    background-color: #002b5b;
+/* Styling for Projects */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-#html {
-    background-color: #5b0000;
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#css {
-    background-color: #002b5b;
+.project {
+    padding-top: 40px;
 }
 
-#cpp {
-    background-color: #5b0000;
+.project-title {
+    padding-bottom: 40px;
 }
 
-#api {
-    background-color: #002b5b;
+.img img {
+    height: 400px;
+    width: 400px;
+
+    border: 2px black solid;
+    border-radius: 6px;
+
+    margin-bottom: 30px;
 }
 
-#restcontroller {
-    background-color: #5b0000;
+.description {
+    font-size: 24px;
 }
-
-#springboot {
-    background-color: #002b5b;
-}
-
-#mvc {
-    background-color: #5b0000;
-}
-
-#databases {
-    background-color: #002b5b;
-}
-
-#singlepage {
-    background-color: #5b0000;
-}
-
-#thymeleef {
-    background-color: #002b5b;
-}
-
-#agile {
-    background-color: #5b0000;
-}
-
-#tdd {
-    background-color: #002b5b;
-}
-
-#github {
-    background-color: #5b0000;
-}
-
-
-
 
 /* Styling for Footer */
 
@@ -270,6 +254,20 @@
     animation: bounce 3s infinite;
 }
 
+.cursor {
+    height: 26px;
+    width: auto;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    margin-right: 48px;
+    margin-top: 60px;
+
+    animation: bounce 2s infinite;
+}
+
 .logo {
     height: 50px;
     width: auto;
@@ -293,4 +291,8 @@
 
 .inverted {
     filter: invert(100%);
+}
+
+.dark-border {
+    border: 2px white solid;
 }

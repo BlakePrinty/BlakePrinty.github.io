@@ -1,41 +1,29 @@
-const darkModeButton = document.querySelector(".slider");
 
-const pageHeader = document.querySelector(".header");
-const toggleSwitchDiv = document.querySelector(".toggleSwitch");
-const pageFooter = document.querySelector(".footer");
-const downArrow = document.querySelector(".down-arrow");
-const aboutMe = document.querySelector(".about");
-const projects = document.querySelector(".projects");
+const main = document.querySelector(".main");
 
-let darkMode = false;
+const downArrow = document.querySelector(".downArrow");
+const logo = document.querySelector(".logo");
+const cursor = document.querySelector(".cursor");
+// const projectImg = document.querySelectorAll(".img");
 
-darkModeButton.addEventListener("click", () => {
-    if (pageHeader.classList.contains("dark")) {
+logo.addEventListener("click", () => {
+    
+    if (main.classList.contains("dark")) {
 
-        darkModeOn();
-
+        main.classList.remove("dark");
+        logo.classList.add("inverted");
+        cursor.classList.add("inverted");
+        // projectImg.classList.remove("dark-border");
+        downArrow.classList.remove("inverted");
+    
     } else {
 
-        darkModeOff();
-
+        main.classList.add("dark");
+        logo.classList.remove("inverted");
+        cursor.classList.remove("inverted");
+        // projectImg.classList.add("dark-border");
+        downArrow.classList.add("inverted");
+    
     }
+
 });
-
-
-function darkModeOn() {
-    pageHeader.classList.remove("dark");
-    toggleSwitchDiv.classList.remove("dark");
-    pageFooter.classList.remove("dark");
-    downArrow.classList.remove("white");
-    aboutMe.classList.remove("dark");
-    projects.classList.remove("dark");
-}
-
-function darkModeOff() {
-    pageHeader.classList.add("dark");
-    toggleSwitchDiv.classList.add("dark");
-    pageFooter.classList.add("dark");
-    downArrow.classList.add("white");
-    aboutMe.classList.add("dark");
-    projects.classList.add("dark");
-}

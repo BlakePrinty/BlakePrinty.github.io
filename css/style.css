@@ -33,7 +33,7 @@
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(-40px);
+        transform: translateY(-60px);
     }
 
     33% {
@@ -49,7 +49,7 @@
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(60px);
     }
 
     33% {
@@ -68,7 +68,7 @@
     }
 
     50% {
-        transform: translateY(10px)
+        transform: translateY(20px)
     }
 
     100% {
@@ -79,293 +79,220 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Apercu;
+    font-family: ApercuLight;
     text-align: center;
+
+    /* border: .1px solid red; */
 }
 
-.about, .projects, footer {
-    animation: fadeIn 3s;
+/* Universal Styling */
+
+.page {
+    height: 100vh;
+    width: 100%;
+}
+
+.title {
+    font-size: 96px;
+    font-family: ApercuBold;
+}
+
+.subtitle {
+    font-size: 42px;
+    font-family: Apercu;
+}
+
+.text {
+    font-size: 32px;
+    font-family: ApercuLight;
+}
+
+.container {
+    width: 70%;
 }
 
 /* Styling for Header */
 
-header,
-.about,
-.projects {
-    height: 100vh;
+#header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background-color: white;
 }
 
-header h1 {
-    font-family: ApercuBold;
-    font-size: 48px;
-    font-weight: 400;
-    text-align: center;
-
+#name {
     animation: fadeInDown 3s;
 }
 
-header h2 {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-
-    animation: fadeInUp 4s;
+#position {
+    animation: fadeInUp 4.5s;
 }
 
-.down-arrow {
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 30px;
+/* Styling for About */
 
-    animation: bounce 3s infinite;
-}
-
-.white {
-    filter: invert(100%);
-}
-
-/* Styling for About Section */
-
-.about,
-.projects {
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-
-    padding-left: 15%;
-    padding-right: 15%;
-
-    padding-top: 15vh;
-}
-
-.about p {
-    font-size: 16px;
-}
-
-.title {
-    font-size: 44px;
-    padding-bottom: 40px;
-}
-
-.about-container {
+#about {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
-    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
-.language,
-.label {
-    font-family: ApercuBold;
-    font-size: 14px;
-    padding: 3px 10px;
-    color: white;
-    border-radius: 2px;
+.languages-and-skills {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+}
+
+.languages-title, .skills-title {
+    margin-bottom: 20px;
+}
+
+.list-of-languages, .list-of-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    margin-bottom: 20px;
+}
+
+.language, .skill {
+    font-size: 26px;
 
     background-color: #171717;
+    color: white;
+
+    border-radius: 4px;
+    padding: 4px 10px;
+
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-.languages,
-.labels {
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-
-    justify-content: center;
-}
-
-.language:hover,
-.label:hover {
-    transform: translateY(-1px) translateX(1px);
+.language:hover, .skill:hover {
     cursor: pointer;
+
+    transform: translateY(-2px) translateX(2px);
 }
 
-/* Skill Colors */
-
-#java {
-    background-color: rgb(241, 133, 0);
+#java, #python, #css, #api, #springboot, #databases, #thymeleef, #tdd {
+    background-color: #002b5b;
 }
 
-#html {
-    background-color: red;
-}
-
-#css {
-    background-color: blue;
-}
-
-#javascript {
-    background-color: rgb(255, 186, 59);
-}
-
-#python {
-    background-color: rgb(30, 161, 255)
-}
-
-#cpp {
-    background-color: blue;
-}
-
-#restapi {
-    background-color: darkslateblue;
-}
-
-#spring {
-    background-color: green;
-}
-
-#thymeleef {
-    background-color: cadetblue;
-}
-
-#mvc {
-    background-color: rgb(11, 164, 184);
-}
-
-#oop {
-    background-color: darkmagenta;
-}
-
-#tdd {
-    background-color: darkolivegreen;
-}
-
-#agile {
-    background-color: lightslategray;
-}
-
-#databases {
-    background-color: midnightblue;
-}
-
-#github {
-    background-color: black;
-}
-
-#singlePageApp {
-    background-color: rgb(242, 0, 255);
+#javascript, #html, #cpp, #restcontrollers, #mvc, #singlepage, #agile, #github {
+    background-color: #5b0000;
 }
 
 /* Styling for Projects */
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .project {
-    height: 40vh;
-    width: 90%;
-    /* background-color: red; */
+    padding-top: 40px;
 }
 
-.project * {
-    /* border: red solid 1px; */
-    padding: 5px;
+.project-title {
+    padding-bottom: 40px;
 }
 
-.preview img {
-    height: 240px;
-    width: auto;
+.img img {
+    height: 400px;
+    width: 400px;
+
+    border: 2px black solid;
+    border-radius: 6px;
+
+    margin-bottom: 30px;
 }
 
-
+.description {
+    font-size: 24px;
+}
 
 /* Styling for Footer */
 
-footer {
+.bp-footer {
+    height: 50px;
+    width: 100%;
+
     display: flex;
-    height: 10vh;
     justify-content: center;
     align-items: center;
-    font-size: 10px;
 }
 
-/* Dark Mode */
+
+
+/* EXTRAS */
+
+.downArrow {
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+    bottom: 0;
+
+    margin-bottom: 50px;
+
+    animation: bounce 3s infinite;
+}
+
+.cursor {
+    height: 26px;
+    width: auto;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    margin-right: 48px;
+    margin-top: 60px;
+
+    animation: bounce 2s infinite;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    margin-right: 24px;
+    margin-top: 12px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
 
 .dark {
     background-color: #171717;
     color: white;
 }
 
-/* The switch - the box around the slider */
-.pointer {
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin-top: 26px;
-    margin-right: 80px;
-    font-size: 10px;
-    font-weight: 100;
+.inverted {
+    filter: invert(100%);
 }
 
-.switch {
-    position: fixed;
-    margin-right: 20px;
-    margin-top: 20px;
-    scale: .5;
-    top: 0;
-    right: 0;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* The slider */
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider,
-.pointer {
-    animation: fadeIn 3s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #f32121;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
+.dark-border {
+    border: 2px white solid;
 }

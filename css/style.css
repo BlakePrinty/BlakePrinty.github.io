@@ -1,4 +1,11 @@
+:root {
+    --primary: #000000;
+    --secondary: #ffffff;
+    --accent: #898989;
+}
+
 /* Font Faces */
+
 @font-face {
     font-family: "ApercuBold";
     src: url(/fonts/Apercu\ Bold.otf);
@@ -14,7 +21,27 @@
     src: url(/fonts/Apercu\ Regular.otf);
 }
 
+@font-face {
+    font-family: "ApercuBoldItalic";
+    src: url(/fonts/Apercu\ Bold\ Italic.otf);
+}
+
+@font-face {
+    font-family: "ApercuItalic";
+    src: url(/fonts/Apercu\ Italic.otf);
+}
+
 /* Key frames */
+
+@keyframes fade {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: lightblue;
+    }
+}
 
 @keyframes fadeIn {
     0% {
@@ -79,220 +106,207 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: ApercuLight;
+    font-family: Apercu;
     text-align: center;
 
     /* border: .1px solid red; */
 }
 
-/* Universal Styling */
+body {
+    background-color: #171717;
+    color: white;
+}
 
-.page {
+.down {
+    filter: invert(100%);
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 50px;
+    animation: bounce 2s infinite;
+}
+
+a {
+    text-decoration: none;
+    color: lightblue;
+    font-family: ApercuBoldItalic;
+}
+
+span {
+    color: lightblue;
+    font-family: ApercuBold;
+}
+
+.fullpage {
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.halfpage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .title {
-    font-size: 96px;
+    font-size: 72px;
     font-family: ApercuBold;
 }
 
 .subtitle {
-    font-size: 42px;
-    font-family: Apercu;
+    font-size: 36px;
+    color: lightblue;
 }
 
-.text {
-    font-size: 32px;
-    font-family: ApercuLight;
+/* Header Styling */
+#myName {
+    animation: fadeInDown 2s;
 }
 
-.container {
-    width: 70%;
+#role {
+    animation: fadeInUp 3s;
 }
 
-/* Styling for Header */
+.contactme {
+    position: fixed;
+    top: 0;
+    left: 0;
 
-#header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
 }
 
-#name {
-    animation: fadeInDown 3s;
+.contactlink {
+    height: 36px;
+    padding: 5px;
+
+    filter: invert(100%);
 }
 
-#position {
-    animation: fadeInUp 4.5s;
+.aboutText {
+    width: 60%;
+    font-size: 30px;
 }
 
-/* Styling for About */
-
-#about {
+.footer {
+    margin-top: 100px;
+    height: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.languages-and-skills {
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 30px;
-}
-
-.languages-title, .skills-title {
-    margin-bottom: 20px;
-}
-
-.list-of-languages, .list-of-skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
-    margin-bottom: 20px;
-}
-
-.language, .skill {
-    font-size: 26px;
-
-    background-color: #171717;
-    color: white;
-
-    border-radius: 4px;
-    padding: 4px 10px;
-
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.language:hover, .skill:hover {
-    cursor: pointer;
-
-    transform: translateY(-2px) translateX(2px);
-}
-
-#java, #python, #css, #api, #springboot, #databases, #thymeleef, #tdd {
-    background-color: #002b5b;
-}
-
-#javascript, #html, #cpp, #restcontrollers, #mvc, #singlepage, #agile, #github {
-    background-color: #5b0000;
-}
-
-/* Styling for Projects */
-
-#projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    height: auto;
-
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.project-container {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .project {
-    padding-top: 40px;
-}
-
-.project-title {
-    padding-bottom: 40px;
-}
-
-.img img {
-    height: 400px;
-    width: 400px;
-
-    border: 2px black solid;
-    border-radius: 6px;
-
-    margin-bottom: 30px;
-}
-
-.description {
-    font-size: 24px;
-}
-
-/* Styling for Footer */
-
-.bp-footer {
-    height: 50px;
-    width: 100%;
-
+    background-color: #252525;
+    width: 80%;
+    height: 300px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    border-radius: 10px;
+
+    margin-top: 100px;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.preview {
+    height: 100%;
+    width: 550px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 4px solid lightblue;
+}
+
+.projectTitle {
+    font-size: 40px;
+    font-family: ApercuBold;
+    color: white;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.projectSubtitle {
+    font-size: 20px;
+    font-family: ApercuItalic;
+    color: lightblue;
+
+    padding-left: 10px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.projectText {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
     align-items: center;
 }
 
-
-
-/* EXTRAS */
-
-.downArrow {
-    height: 30px;
-    width: 30px;
-
-    position: absolute;
-    bottom: 0;
-
-    margin-bottom: 50px;
-
-    animation: bounce 3s infinite;
+.skill {
+    color: #171717;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: ApercuBold;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 50px;
 }
 
-.cursor {
-    height: 26px;
-    width: auto;
-
-    position: fixed;
-    top: 0;
-    right: 0;
-
-    margin-right: 48px;
-    margin-top: 60px;
-
-    animation: bounce 2s infinite;
+.more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
 }
 
-.logo {
-    height: 50px;
-    width: auto;
-
-    position: fixed;
-    top: 0;
-    right: 0;
-
-    margin-right: 24px;
-    margin-top: 12px;
+.link {
+    color: #171717;
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: ApercuBold;
+    margin-right: 10px;
 }
 
-.logo:hover {
+.link:hover {
     cursor: pointer;
-}
+    animation: fade .5s ease;
+    background-color: lightblue;
 
-.dark {
-    background-color: #171717;
-    color: white;
-}
-
-.inverted {
-    filter: invert(100%);
-}
-
-.dark-border {
-    border: 2px white solid;
 }

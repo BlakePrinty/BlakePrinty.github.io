@@ -39,7 +39,7 @@
     }
 
     100% {
-        background-color: lightblue;
+        background-color: #7ac8e2;
     }
 }
 
@@ -130,12 +130,12 @@ body {
 
 a {
     text-decoration: none;
-    color: lightblue;
+    color: #7ac8e2;
     font-family: ApercuBoldItalic;
 }
 
 span {
-    color: lightblue;
+    color: #7ac8e2;
     font-family: ApercuBold;
 }
 
@@ -176,7 +176,7 @@ span {
 
 .subtitle {
     font-size: 36px;
-    color: lightblue;
+    color: #7ac8e2;
 }
 
 /* Header Styling */
@@ -240,7 +240,7 @@ span {
     width: 550px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-right: 4px solid lightblue;
+    border-right: 4px solid #7ac8e2;
 }
 
 .projectTitle {
@@ -256,7 +256,7 @@ span {
 .projectSubtitle {
     font-size: 20px;
     font-family: ApercuItalic;
-    color: lightblue;
+    color: #7ac8e2;
 
     padding-left: 10px;
     padding-bottom: 20px;
@@ -277,7 +277,7 @@ span {
 
 .skill {
     color: #171717;
-    background-color: lightblue;
+    background-color: #7ac8e2;
     padding: 10px;
     border-radius: 3px;
     font-family: ApercuBold;
@@ -307,6 +307,6 @@ span {
 .link:hover {
     cursor: pointer;
     animation: fade .5s ease;
-    background-color: lightblue;
+    background-color: #7ac8e2;
 
 }

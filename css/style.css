@@ -39,7 +39,7 @@
     }
 
     100% {
-        background-color: lightblue;
+        background-color: #7ac8e2;
     }
 }
 
@@ -130,12 +130,12 @@ body {
 
 a {
     text-decoration: none;
-    color: lightblue;
+    color: #7ac8e2;
     font-family: ApercuBoldItalic;
 }
 
 span {
-    color: lightblue;
+    color: #7ac8e2;
     font-family: ApercuBold;
 }
 
@@ -176,7 +176,7 @@ span {
 
 .subtitle {
     font-size: 36px;
-    color: lightblue;
+    color: #7ac8e2;
 }
 
 /* Header Styling */
@@ -187,6 +187,11 @@ span {
 #role {
     animation: fadeInUp 3s;
 }
+
+
+
+
+
 
 .contactme {
     position: fixed;
@@ -218,9 +223,22 @@ span {
     align-items: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .project {
     background-color: #252525;
-    width: 80%;
+    width: 1400px;
     height: 300px;
     display: flex;
     flex-direction: row;
@@ -240,7 +258,7 @@ span {
     width: 550px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-right: 4px solid lightblue;
+    border-right: 4px solid #7ac8e2;
 }
 
 .projectTitle {
@@ -256,7 +274,7 @@ span {
 .projectSubtitle {
     font-size: 20px;
     font-family: ApercuItalic;
-    color: lightblue;
+    color: #7ac8e2;
 
     padding-left: 10px;
     padding-bottom: 20px;
@@ -266,6 +284,7 @@ span {
 .projectText {
     text-align: left;
     padding-left: 10px;
+    font-size: 16px;
 }
 
 .skills {
@@ -277,7 +296,7 @@ span {
 
 .skill {
     color: #171717;
-    background-color: lightblue;
+    background-color: #7ac8e2;
     padding: 10px;
     border-radius: 3px;
     font-family: ApercuBold;
@@ -307,6 +326,68 @@ span {
 .link:hover {
     cursor: pointer;
     animation: fade .5s ease;
-    background-color: lightblue;
+    background-color: #7ac8e2;
 
 }
+
+
+@media (max-width: 1400px) {
+    .project {
+        width: 80%;
+        height: 100%;
+
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .preview {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-right: none;
+        border-bottom: 4px solid #7ac8e2;
+    }
+}
+
+@media (max-width: 1000px) {
+    .title {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .aboutText {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .projectTitle {
+        font-size: 30px;
+    }
+
+    .projectSubtitle {
+        font-size: 18px;
+    }
+
+    .skills {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .skill {
+        margin-top: 10px;
+    }
+
+    .more {
+        justify-content: center;
+    }
+}
+
+/* @media (min-width: 576px) {
+    .selector {
+        background-color: #f00;
+    }
+} */

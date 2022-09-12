@@ -188,11 +188,6 @@ span {
     animation: fadeInUp 3s;
 }
 
-
-
-
-
-
 .contactme {
     position: fixed;
     top: 0;
@@ -201,6 +196,8 @@ span {
     display: flex;
     flex-direction: column;
     padding: 10px;
+
+    animation: fadeIn 2s;
 }
 
 .contactlink {
@@ -222,19 +219,6 @@ span {
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .project {
     background-color: #252525;

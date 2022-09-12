@@ -188,6 +188,11 @@ span {
     animation: fadeInUp 3s;
 }
 
+
+
+
+
+
 .contactme {
     position: fixed;
     top: 0;
@@ -218,9 +223,22 @@ span {
     align-items: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .project {
     background-color: #252525;
-    width: 80%;
+    width: 1400px;
     height: 300px;
     display: flex;
     flex-direction: row;
@@ -266,6 +284,7 @@ span {
 .projectText {
     text-align: left;
     padding-left: 10px;
+    font-size: 16px;
 }
 
 .skills {
@@ -310,3 +329,65 @@ span {
     background-color: #7ac8e2;
 
 }
+
+
+@media (max-width: 1400px) {
+    .project {
+        width: 80%;
+        height: 100%;
+
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .preview {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-right: none;
+        border-bottom: 4px solid #7ac8e2;
+    }
+}
+
+@media (max-width: 1000px) {
+    .title {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .aboutText {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .projectTitle {
+        font-size: 30px;
+    }
+
+    .projectSubtitle {
+        font-size: 18px;
+    }
+
+    .skills {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .skill {
+        margin-top: 10px;
+    }
+
+    .more {
+        justify-content: center;
+    }
+}
+
+/* @media (min-width: 576px) {
+    .selector {
+        background-color: #f00;
+    }
+} */

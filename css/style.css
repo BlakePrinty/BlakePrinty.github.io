@@ -39,7 +39,7 @@
     }
 
     100% {
-        background-color: #7ac8e2;
+        background-color: #664ec7;
     }
 }
 
@@ -130,12 +130,12 @@ body {
 
 a {
     text-decoration: none;
-    color: #7ac8e2;
+    color: #664ec7;
     font-family: ApercuBoldItalic;
 }
 
 span {
-    color: #7ac8e2;
+    color: #664ec7;
     font-family: ApercuBold;
 }
 
@@ -176,7 +176,7 @@ span {
 
 .subtitle {
     font-size: 36px;
-    color: #7ac8e2;
+    color: #664ec7;
 }
 
 /* Header Styling */
@@ -242,7 +242,7 @@ span {
     width: 550px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-right: 4px solid #7ac8e2;
+    border-right: 4px solid #664ec7;
 }
 
 .projectTitle {
@@ -258,7 +258,7 @@ span {
 .projectSubtitle {
     font-size: 20px;
     font-family: ApercuItalic;
-    color: #7ac8e2;
+    color: #664ec7;
 
     padding-left: 10px;
     padding-bottom: 20px;
@@ -279,8 +279,8 @@ span {
 }
 
 .skill {
-    color: #171717;
-    background-color: #7ac8e2;
+    color: #ffffff;
+    background-color: #664ec7;
     padding: 10px;
     border-radius: 3px;
     font-family: ApercuBold;
@@ -310,8 +310,12 @@ span {
 .link:hover {
     cursor: pointer;
     animation: fade .5s ease;
-    background-color: #7ac8e2;
+    background-color: #664ec7;
 
+}
+
+#footer-name {
+    padding-left: 4px;
 }
 
 
@@ -329,7 +333,7 @@ span {
         border-bottom-left-radius: 0;
         border-top-right-radius: 10px;
         border-right: none;
-        border-bottom: 4px solid #7ac8e2;
+        border-bottom: 4px solid #664ec7;
     }
 }
 
@@ -369,9 +373,3 @@ span {
         justify-content: center;
     }
 }
-
-/* @media (min-width: 576px) {
-    .selector {
-        background-color: #f00;
-    }
-} */

@@ -21,20 +21,6 @@
     src: url(/assets/fonts/Poppins-Light.ttf);
 }
 
-/* Universal styling */
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
 /* Page Styling */
 
 .header {
@@ -51,7 +37,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: rgb(69, 69, 69);
+    color: rgb(48, 77, 113);
 }
 
 .header-title {
@@ -64,8 +50,41 @@ li {
     font-size: 32px;
 }
 
-.main {
-    height: 100vh;
+/* Styling for development experience */
+
+/* Styling for resume section */
+
+/* Styling for contact page */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.contact-header {
+    display: flex;
+    font-family: PopBold;
+    font-size: 32px;
+    color: rgb(48, 77, 113);
+    border-bottom: 4px solid rgb(48, 77, 113);
+}
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item-img {
+    padding-top: 10px;
+    height: 38px;
+    padding-left: 4px;
+    padding-right: 4px;
+    fill: rgb(48, 77, 113);
 }
 
 /* Styling for footer */
@@ -82,10 +101,23 @@ li {
 }
 
 .footer-header {
-    color: rgb(69, 69, 69);
+    color: rgb(48, 77, 113);
     font-family: PopBold;
     font-size: 32px;
     font-weight: 600;
+}
+
+.footer-logos, ul {
+    list-style-type: none;
+}
+
+.footer-item {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.footer-link, a {
+    text-decoration: none;
 }
 
 .footer-logos {
@@ -95,13 +127,13 @@ li {
     align-items: center;
 }
 
-.footer-link-img {
-    height: 32px;
-    filter: brightness(0);
+.footer-item-img {
+    height: 38px;
+    fill: rgb(48, 77, 113);
 }
 
 .footer-copyright {
-    color: rgb(69, 69, 69);
+    color: rgb(48, 77, 113);
     font-family: PopLight;
     font-size: 16px;
     font-weight: 100;

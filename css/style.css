@@ -1,375 +1,107 @@
-:root {
-    --primary: #000000;
-    --secondary: #ffffff;
-    --accent: #898989;
-}
-
-/* Font Faces */
-
-@font-face {
-    font-family: "ApercuBold";
-    src: url(/fonts/Apercu\ Bold.otf);
-}
-
-@font-face {
-    font-family: "ApercuLight";
-    src: url(/fonts/Apercu\ Light.otf);
-}
-
-@font-face {
-    font-family: "Apercu";
-    src: url(/fonts/Apercu\ Regular.otf);
-}
-
-@font-face {
-    font-family: "ApercuBoldItalic";
-    src: url(/fonts/Apercu\ Bold\ Italic.otf);
-}
-
-@font-face {
-    font-family: "ApercuItalic";
-    src: url(/fonts/Apercu\ Italic.otf);
-}
-
-/* Key frames */
-
-@keyframes fade {
-    0% {
-        background-color: white;
-    }
-
-    100% {
-        background-color: #664ec7;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    66% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-60px);
-    }
-
-    33% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(60px);
-    }
-
-    33% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(20px)
-    }
-
-    100% {
-        transform: translateY(0px)
-    }
-}
-
 * {
     padding: 0;
     margin: 0;
-    font-family: Apercu;
-    text-align: center;
-
-    /* border: .1px solid red; */
+    font-family: PopReg;
 }
 
-body {
-    background-color: #171717;
-    color: white;
+/* Fonts */
+
+@font-face {
+    font-family: PopReg;
+    src: url(/assets/fonts/Poppins-Regular.ttf);
 }
 
-.down {
-    filter: invert(100%);
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    bottom: 0;
-    text-align: center;
-    margin-bottom: 50px;
-    animation: bounce 2s infinite;
+@font-face {
+    font-family: PopBold;
+    src: url(/assets/fonts/Poppins-Bold.ttf);
 }
 
+@font-face {
+    font-family: PopLight;
+    src: url(/assets/fonts/Poppins-Light.ttf);
+}
+
+/* Universal styling */
 a {
     text-decoration: none;
-    color: #664ec7;
-    font-family: ApercuBoldItalic;
 }
 
-span {
-    color: #664ec7;
-    font-family: ApercuBold;
+ul {
+    list-style-type: none;
 }
 
-.fullpage {
+li {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* Page Styling */
+
+.header {
     height: 100vh;
     width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    width: 1000px;
+    height: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
-.halfpage {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.header-title {
+    font-family: PopBold;
+    font-size: 64px;
 }
 
-.page {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 40px;
-    margin-bottom: 40px;
+.header-subtitle {
+    font-family: PopLight;
+    font-size: 32px;
 }
 
-.title {
-    font-size: 72px;
-    font-family: ApercuBold;
+.main {
+    height: 100vh;
 }
 
-.subtitle {
-    font-size: 36px;
-    color: #664ec7;
-}
-
-/* Header Styling */
-#myName {
-    animation: fadeInDown 2s;
-}
-
-#role {
-    animation: fadeInUp 3s;
-}
-
-.contactme {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-
-    animation: fadeIn 2s;
-}
-
-.contactlink {
-    height: 36px;
-    padding: 5px;
-
-    filter: invert(100%);
-}
-
-.aboutText {
-    width: 60%;
-    font-size: 30px;
-}
+/* Styling for footer */
 
 .footer {
-    margin-top: 100px;
-    height: 60px;
+    background-color: aliceblue;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.project {
-    background-color: #252525;
-    width: 1400px;
-    height: 300px;
+.footer-header {
+    font-family: PopBold;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.footer-logos {
     display: flex;
     flex-direction: row;
-    border-radius: 10px;
-
-    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
-.projectInfo {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.footer-link-img {
+    height: 32px;
+    filter: brightness(0);
 }
 
-.preview {
-    height: 100%;
-    width: 550px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-right: 4px solid #664ec7;
-}
-
-.projectTitle {
-    font-size: 40px;
-    font-family: ApercuBold;
-    color: white;
-
-    padding-top: 10px;
-    padding-left: 10px;
-    text-align: left;
-}
-
-.projectSubtitle {
-    font-size: 20px;
-    font-family: ApercuItalic;
-    color: #664ec7;
-
-    padding-left: 10px;
-    padding-bottom: 20px;
-    text-align: left;
-}
-
-.projectText {
-    text-align: left;
-    padding-left: 10px;
+.footer-copyright {
+    font-family: PopLight;
     font-size: 16px;
-}
-
-.skills {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-.skill {
-    color: #ffffff;
-    background-color: #664ec7;
-    padding: 10px;
-    border-radius: 3px;
-    font-family: ApercuBold;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 50px;
-}
-
-.more {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 20px;
-}
-
-.link {
-    color: #171717;
-    background-color: white;
-    padding: 10px;
-    border-radius: 3px;
-    font-family: ApercuBold;
-    margin-right: 10px;
-}
-
-.link:hover {
-    cursor: pointer;
-    animation: fade .5s ease;
-    background-color: #664ec7;
-
-}
-
-#footer-name {
-    padding-left: 4px;
-}
-
-
-@media (max-width: 1400px) {
-    .project {
-        width: 80%;
-        height: 100%;
-
-        flex-direction: column;
-        padding-bottom: 40px;
-    }
-
-    .preview {
-        width: 100%;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 10px;
-        border-right: none;
-        border-bottom: 4px solid #664ec7;
-    }
-}
-
-@media (max-width: 1000px) {
-    .title {
-        font-size: 48px;
-    }
-
-    .subtitle {
-        font-size: 24px;
-    }
-
-    .aboutText {
-        width: 80%;
-        font-size: 20px;
-    }
-
-    .projectTitle {
-        font-size: 30px;
-    }
-
-    .projectSubtitle {
-        font-size: 18px;
-    }
-
-    .skills {
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .skill {
-        margin-top: 10px;
-    }
-
-    .more {
-        justify-content: center;
-    }
+    font-weight: 100;
 }

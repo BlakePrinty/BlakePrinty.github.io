@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     font-family: PopReg;
+
+    /* border: 1px solid red; */
 }
 
 /* Fonts */
@@ -19,6 +21,26 @@
 @font-face {
     font-family: PopLight;
     src: url(/assets/fonts/Poppins-Light.ttf);
+}
+
+.scroll-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: aliceblue;
+}
+
+.progress-bar {
+    height: 8px;
+    background: rgb(48, 77, 113);
+    width: 0%;
 }
 
 /* Page Styling */
@@ -50,6 +72,28 @@
     font-size: 32px;
 }
 
+.header-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.header-list-item {
+    margin-right: 24px;
+}
+
+.header-item-img {
+    height: 28px;
+    fill: rgb(48, 77, 113);
+}
+
+.header-image-description {
+    color: rgb(48, 77, 113);
+    margin-left: 4px;
+    font-size: 18px;
+}
+
 /* Styling for development experience */
 
 /* Styling for resume section */
@@ -74,17 +118,31 @@
 }
 .contact-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.contact-item {
+    margin-top: 16px;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-item-img {
-    padding-top: 10px;
     height: 38px;
-    padding-left: 4px;
-    padding-right: 4px;
     fill: rgb(48, 77, 113);
+}
+
+.image-description {
+    color: rgb(48, 77, 113);
+    margin-left: 4px;
+    font-size: 24px;
 }
 
 /* Styling for footer */

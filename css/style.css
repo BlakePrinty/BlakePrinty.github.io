@@ -94,9 +94,83 @@
     font-size: 18px;
 }
 
-/* Styling for development experience */
+/* Styling for portfolio */
 
-/* Styling for resume section */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.portfolio-title {
+    color: rgb(48, 77, 113);
+    border-bottom: 4px solid rgb(48, 77, 113);
+    font-family: PopBold;
+    font-size: 32px;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.project-card {
+    min-width: 256px;
+    min-height: 346px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgb(48, 77, 113, 0.5);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.project-title {
+    color: rgb(48, 77, 113);
+    border-bottom: 4px solid rgb(48, 77, 113);
+    font-family: PopBold;
+    font-size: 24px;
+}
+
+.project-img {
+    margin-top: 24px;
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.source-code {
+    margin-top: 24px;
+    border: none;
+    background-color: rgb(48, 77, 113);
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.source-code:hover {
+    cursor: pointer;
+    background-color: rgb(39, 66, 99);
+}
+
+.source-link {
+    color: aliceblue;
+}
 
 /* Styling for contact page */
 

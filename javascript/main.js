@@ -1,8 +1,21 @@
-window.onscroll = function() {scrollUpdater()};
+const lines = document.querySelector(".lines");
+const mobileList = document.querySelector(".mobile-list");
+const mobileLinks = document.querySelectorAll(".mobile-link");
 
-function scrollUpdater() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("scrollBar").style.width = scrolled + "%";
-}
+mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mobileList.classList.remove("flex");
+        lines.innerHTML = "&#9776;";
+    })
+})
+
+lines.addEventListener("click", () => {
+    if (mobileList.classList.contains("flex")) {
+        mobileList.classList.remove("flex");
+        lines.innerHTML = "&#9776;";
+    } else {
+        mobileList.classList.add("flex");
+        lines.innerHTML = "X";
+    }
+});
+

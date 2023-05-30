@@ -1,124 +1,197 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blake Printy - Portfolio</title>
-    <link rel="shortcut icon" href="/assets/imgs/logo.png">
+    <title>Blake Printy | Portfolio</title>
     <link rel="stylesheet" href="/css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
-
 <body>
-
-    <div class="scroll-container">
-        <div class="progress-container">
-            <div class="progress-bar" id="scrollBar"></div>
-        </div>
-    </div>
+    <ul class="mobile-list">
+        <li class="list-item">
+            <a class="nav-link mobile-link" href="#home">Home</a>
+        </li>
+        <li class="list-item">
+            <a class="nav-link mobile-link" href="#about">About</a>
+        </li>
+        <li class="list-item">
+            <a class="nav-link mobile-link" href="#projects">Projects</a>
+        </li>
+        <li class="list-item">
+            <a class="nav-link mobile-link" href="#contact">Contact</a>
+        </li>
+    </ul>
     
-    <header class="header">
-        <div class="header-text">
-            <h1 class="header-title">Blake Printy</h1>
-            <h2 class="header-subtitle">Developer</h2>
-            <ul class="header-list">
-                <li class="header-list-item">
-                    <a href="https://github.com/BlakePrinty" class="contact-link" target="_blank">
-                        <svg class="header-item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                        <p class="header-image-description">/BlakePrinty</p>
+    <nav>
+        <a class="nav-logo" href="">
+            <img class="logo" src="/imgs/logo.png">
+            <h1 class="nav-title">Blake Printy</h1>
+        </a>
+        <div class="lines">&#9776;</div>
+        
+        <ul class="list">
+            <li class="list-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="list-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="list-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="list-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="header-content">
+            <h1 class="header-title">Full Stack Web Developer</h1>
+            <p class="header-text">My name is Blake Printy, a passionate and skilled full stack web developer with Certificates in Software Development and MySQL.</p>
+            <ul class="list social-list">
+                <li class="mobile-list-item list-item">
+                    <a href="https://github.com/BlakePrinty" target="_blank">
+                        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                     </a>
-                </li>
-                <li class="header-list-item">
-                    <a href="https://www.linkedin.com/in/blake-printy/" class="contact-link" target="_blank">
-                        <svg class="header-item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
-                        <p class="header-image-description">/in/blake-printy</p>
-                    </a>
+                    <li class="mobile-list-item list-item">
+                        <a href="https://www.linkedin.com/in/blake-printy/" target="_blank">
+                            <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
+                        </a>
                 </li>
             </ul>
+            <div class="tech-stack">
+                <h4 class="stack">Tech Stack</h4>
+                <div class="vert-bar"></div>
+                <ul class="tech-content">
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/html.6e7b1b463015c056aeb9a624c8dc2876.svg">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/css3.9cecabbf6ce67609c48bc4f280a11002.svg">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/javascript.de4c2594613e34b15666206bbede7327.svg">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/java-logo3.png">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/spring-logo.png">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png">
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
-    <section class="portfolio">
-        <h1 class="portfolio-title">Portfolio</h1>
-        <ul class="projects-list">
-            <li class="project">
-                <div class="project-card">
-                    <h1 class="project-title">HabiTrack</h1>
-                    <img class="project-img" src="/assets/imgs/HabiTrackLogo.png" alt="HabiTrack Image">
-                    <button class="source-code">
-                        <a href="https://github.com/2022-Summer-Cohort/final-project-summer-2022-habitrack" class="source-link" target="_blank">Source Code</a>
-                    </button>
-                </div>
-            </li>
-            <li class="project">
-                <div class="project-card">
-                    <h1 class="project-title">Album Songs</h1>
-                    <img class="project-img" src="/assets/imgs/AlbumSongsLogo.png" alt="Album Songs Image">
-                    <button class="source-code">
-                        <a href="https://github.com/2022-Summer-Cohort/album-songs-baamp" class="source-link" target="_blank">Source Code</a>
-                    </button>
-                </div>
-            </li>
-            <li class="project">
-                <div class="project-card">
-                    <h1 class="project-title">WordleSolver</h1>
-                    <img class="project-img" src="/assets/imgs/WordleLogo.png" alt="WordleSolver Image">
-                    <button class="source-code">
-                        <a href="https://github.com/BlakePrinty/WordleSolver-Console" class="source-link" target="_blank">Source Code</a>
-                    </button>
-                </div>
-            </li>
-        </ul>
+    <section id="about">
+        <div class="about-content">
+            <h3 class="subtitle">ABOUT ME</h3>
+            <h2 class="about-title">Full Stack Web Developer based in Connecticut, USA</h2>
+            <p>My name is Blake Printy, I studied Computer Science at the University of Maryland, Baltimore County, I received Certificates of Software Development and MySQL from WeCanCodeIT. I am always looking to learn and utilize my skills to build web applications.</p>
+        </div>
     </section>
 
-    <section class="contact">
-        <h1 class="contact-header">More Info</h1>
-        <ul class="contact-list">
-            <li class="contact-item">
-                <a href="/assets/documents/Blake Printy - Resume.pdf" class="contact-link" target="_blank">
-                    <svg class="contact-item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 24h19v-23h-1v22h-18v1zm17-24h-18v22h18v-22zm-3 17h-12v1h12v-1zm0-3h-12v1h12v-1zm0-3h-12v1h12v-1zm-7.348-3.863l.948.3c-.145.529-.387.922-.725 1.178-.338.257-.767.385-1.287.385-.643 0-1.171-.22-1.585-.659-.414-.439-.621-1.04-.621-1.802 0-.806.208-1.432.624-1.878.416-.446.963-.669 1.642-.669.592 0 1.073.175 1.443.525.221.207.386.505.496.892l-.968.231c-.057-.251-.177-.449-.358-.594-.182-.146-.403-.218-.663-.218-.359 0-.65.129-.874.386-.223.258-.335.675-.335 1.252 0 .613.11 1.049.331 1.308.22.26.506.39.858.39.26 0 .484-.082.671-.248.187-.165.322-.425.403-.779zm3.023 1.78l-1.731-4.842h1.06l1.226 3.584 1.186-3.584h1.037l-1.734 4.842h-1.044z"/></svg>
-                    <p class="image-description">Get My Resume</p>
+    <section id="projects">
+        <div class="projects-content">
+            <h3 class="subtitle">PROJECTS</h3>
+            
+            <div class="project">
+                <a href="https://www.habitrack.org/" target="_blank">
+                    <h3 class="project-title">HabiTrack</h3>
                 </a>
-            </li>
-            <li class="contact-item">
-                <a href="/assets/documents/certificate.pdf" class="contact-link" target="_blank">
-                    <svg class="contact-item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.463 14.861c-.241.705-.242.569 0 1.277l.037.223c0 .225-.111.441-.308.578-.628.435-.545.325-.781 1.033-.099.295-.385.495-.708.495h-.001c-.774-.003-.64-.044-1.265.395-.129.092-.283.138-.437.138s-.308-.046-.438-.138c-.625-.439-.49-.397-1.265-.395h-.002c-.322 0-.608-.2-.706-.495-.236-.709-.156-.599-.781-1.033-.197-.136-.308-.354-.308-.578l.037-.222c.242-.705.242-.569 0-1.277l-.037-.223c0-.225.111-.441.309-.578.625-.434.544-.324.781-1.033.098-.296.384-.495.706-.495h.002c.772.002.636.047 1.265-.395.129-.092.283-.138.437-.138s.308.046.438.137c.625.439.49.397 1.265.395h.001c.323 0 .609.199.708.495.236.708.153.598.781 1.033.196.137.308.354.308.578l-.038.223zm-1.713.639c0-.966-.783-1.75-1.75-1.75s-1.75.784-1.75 1.75.783 1.75 1.75 1.75 1.75-.784 1.75-1.75zm-3.067 3.966c-.383 0-.686-.037-.937-.107-.154 1.534-.68 2.685-1.746 3.796.428.053.975-.047 1.416-.28.159.318.326.715.384 1.125 1.005-1.149 1.633-2.527 1.867-4.035-.472-.091-.617-.248-.984-.499zm2.634 0c-.368.253-.521.41-.983.499.234 1.508.862 2.886 1.866 4.036.058-.41.225-.807.384-1.125.441.232.988.333 1.416.28-1.064-1.109-1.584-2.266-1.739-3.797-.252.069-.556.107-.944.107zm-11.317-19.466v21h5.154c.337-.535.528-1.104.602-1.841l.015-.159h-3.771v-17h16v17h-3.765l.016.156c.075.742.265 1.312.598 1.844h5.151v-21h-20zm16 5h-12v1h12v-1zm0 2h-12v1h12v-1zm0 2h-12v1h12v-1z"/></svg>
-                    <p class="image-description">Certificate of Software Development</p>
+                
+                <img class="project-preview" src="/imgs/habitrack.png" alt="">
+
+                <div class="project-buttons">
+                    <a href="https://github.com/BlakePrinty/HabiTrackOpenSource" target="_blank" class="project-link">Source Code
+                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"/></svg>
+                    </a>
+                    <a href="https://www.habitrack.org/" target="_blank" class="project-link">See Live
+                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/></svg>
+                    </a>
+                </div>
+                
+                <ul class="tech-content">
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/html.6e7b1b463015c056aeb9a624c8dc2876.svg">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/css3.9cecabbf6ce67609c48bc4f280a11002.svg">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/javascript.de4c2594613e34b15666206bbede7327.svg">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/java-logo3.png">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/spring-logo.png">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png">
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- <div class="project">
+                <a href="https://www.habitrack.org/" target="_blank">
+                    <h3 class="project-title">HabiTrack</h3>
                 </a>
-            </li>
-            <li class="contact-item">
-                <a class="contact-link" target="_blank">
-                    <svg class="contact-item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
-                    <p class="image-description">Blakehprinty@gmail.com</p>
-                </a>
-            </li>
-            <li class="contact-item">
-                <a class="contact-link" target="_blank">
-                    <svg class="contact-item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm1.476 14.955c.988-.405 1.757-1.211 2.116-2.216l2.408-6.739-6.672 2.387c-1.006.36-1.811 1.131-2.216 2.119l-3.065 7.494 7.429-3.045zm-.122-4.286c.551.551.551 1.446 0 1.996-.551.551-1.445.551-1.996 0-.551-.55-.551-1.445 0-1.996.551-.551 1.445-.551 1.996 0z"/></svg>
-                    <p class="image-description">Connecticut, USA</p>
-                </a>
-            </li>
-        </ul>
+                
+                <img class="project-preview" src="/imgs/habitrack.png" alt="">
+
+                <div class="project-buttons">
+                    <a href="" target="_blank" class="project-link">Source Code
+                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"/></svg>
+                    </a>
+                    <a href="" target="_blank" class="project-link">See Live
+                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/></svg>
+                    </a>
+                </div>
+                
+                <ul class="tech-content">
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/html.6e7b1b463015c056aeb9a624c8dc2876.svg">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/css3.9cecabbf6ce67609c48bc4f280a11002.svg">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/javascript.de4c2594613e34b15666206bbede7327.svg">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/java-logo3.png">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/spring-logo.png">
+                    </li>
+                    <li class="tech-bubble">  
+                        <img class="tech" src="/imgs/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png">
+                    </li>
+                </ul>
+
+            </div> -->
+        </div>
     </section>
 
-    <footer class="footer">
-        <h1 class="footer-header">Blake Printy</h1>
-        <ul class="footer-logos">
-            <li class="footer-item">
-                <a class="footer-link" href="https://github.com/BlakePrinty" target="_blank">
-                    <svg class="footer-item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-            </li>
-            <li class="footer-item">
-                <a class="footer-link" href="https://www.linkedin.com/in/blake-printy/" target="_blank">
-                    <svg class="footer-item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
-                </a>
-            </li>
-        </ul>
-        <p class="footer-copyright">© 2023 Blake Printy. All rights reserved.</p>
+    <!-- <section id="contact">
+        <div class="about-content">
+            <h3 class="subtitle">CONTACT ME</h3>
+            
+        </div>
+    </section> -->
+
+    <footer>
+        <p class="footer">© 2023 Blake Printy. All rights reserved.</p>
     </footer>
 
     <script src="/javascript/main.js"></script>
 </body>
-
 </html>

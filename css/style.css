@@ -155,7 +155,7 @@ header {
 
 .social {
     height: 2rem;
-    width: auto;
+    width: 2rem;
     fill: #383838;
     transition: .25s;
 }
@@ -303,6 +303,24 @@ footer {
     display: flex;
 }
 
+.contact-list {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+}
+
+.path {
+    margin-left: .5rem;
+}
+
 @media (max-width: 800px) {
     .mobile-list {
         list-style: none;
@@ -422,6 +440,10 @@ footer {
         width: 80%;
     }
 
+    .project-preview {
+        width: 100%;
+    }
+
     .project-buttons {
         width: 90%;
     }
@@ -437,5 +459,13 @@ footer {
 
     .project-title {
         font-size: 1.5rem;
+    }
+
+    .path {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: .75rem;
     }
 }

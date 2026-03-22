@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-family: "Google Sans Code";
+}
+
+:root {
+    --primary-color: #1EC677;
+    --dark-color: #0D4029;
+    --light-color: #ECF9EE;
+    --alt-color: #209a61;
+    --black: #000000;
+    --white: #FFFFFF;
+    --background-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.flex {
+    display: flex;
+}
+
+button {
+    background-color: var(--dark-color);
+    border: none;
+    color: var(--light-color);
+    font-size: 1rem;
+    padding: .75rem 2.5rem;
+    border-radius: 4px;
+    transition: .2s ease-in-out;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.colored-background {
+    background-color: var(--light-color);
+}
+
+.white-background {
+    background-color: var(--white);
+}
+
+.dark-background {
+    background-color: var(--dark-color);
+}
+
+.primary-background {
+    background-color: var(--primary-color);
+}
+
+.dark-background p, .dark-background h1 {
+    color: var(--light-color);
+}
+
+.dark-background button {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.dark-background button:hover {
+    background-color: var(--primary-color);
+}
+
+.primary-background button:hover {
+    background-color: var(--alt-color);
+}
+
+/* Nav Bar Styling */
+nav {
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 20%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    z-index: 100;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links li:not(last-child) {
+    margin-right: 3rem;
+}
+
+li a {
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
+
+li a:hover {
+    color: var(--primary-color);
+}
+
+nav h1 {
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+
+/* Styling for header */
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 20%;
+
+    /* border: 2px solid orange; */
+}
+
+header h1 {
+    font-size: 72px;
+    color: var(--dark-color);
+}
+
+header h2 {
+    font-size: 24px;
+    color: var(--dark-color);
+}
+
+/* Styling for section stack */
+
+section {
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 20%;
+    background-color: var(--white);
+}
+
+section h1 {
+    font-size: 60px;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+section h2 {
+    font-size: 28px;
+    color: var(--dark-color);
+}
+
+section p {
+    font-size: 18px;
+    color: var(--dark-color);
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+section p:not(-last-child) {
+    margin-bottom: 1rem;
+}
+
+/* About */
+
+.certificate {
+    max-height: 512px;
+}
+
+.section-container {
+    width: 45%;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 6rem;
+    width: 100%;
+}
+
+.project {
+    height: 256px;
+    background-color: var(--light-color);
+}
+
+/* contact */
+
+.contact-links li:not(last-child) {
+    margin-bottom: 1rem;
+}
+
+.contact-links svg {
+    height: 2.5rem;
+    margin-right: 1rem;
+    fill: var(--dark-color);
+    transition: .2s ease-in-out;
+}
+
+.contact-links h2 {
+    transition: .2s ease-in-out;
+}
+
+.contact-links *:hover {
+    fill: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.project-img {
+    height: 20rem;
+}
+
+/* FOOTER */
+
+footer {
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 20%;
+}
+
+footer p {
+    font-size: 16px;
+    color: var(--light-color);
+    font-weight: 600;
+}

@@ -5,212 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blake Printy | Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Share+Tech&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fonts/style.css">
 </head>
 <body>
 
-<nav class="nav-bar flex">
-    <div class="nav-title">
-        <h1 class="nav-title">BlakePrinty.com</h1>
-    </div>
-    <ul class="nav-links flex">
-        <li class="list-item">
-            <a href="/">Home</a>
-        </li>
-        <li class="list-item">
-            <a href="#about">About</a>
-        </li>
-        <li class="list-item">
-            <a href="#tech">Technologies</a>
-        </li>
-        <li class="list-item">
-            <a href="#projects">Projects</a>
-        </li>
-        <li class="list-item">
-            <a href="#contact">Contact</a>
-        </li>
-    </ul>
-</nav>
+    <nav class="flex-row">
+        <div class="nav-container flex-row">
+            <a href="/">
+                <img src="/assets/images/Logo.png" alt="BP Logo" class="nav-logo">
+            </a>
+            <div class="nav-bars flex-col" id="nav-bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-menu-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<header class="primary-background flex">
-    <div class="header-container">
-        <h1>Software Developer</h1>
-        <h2>Full Stack Web Development <span>|</span> Java <span>|</span> MySQL</h2>
-    </div>
-    <img src="/imgs/panelImg.png" alt="">
-</header>
+    <header></header>
 
-<section class="white-background flex" id="about">
-    <div class="section-container">
-        <h1>About me</h1>
-        <p>My name is Blake Printy, I studied Computer Science at the University of Maryland, Baltimore County and completed multiple coding bootcamps.</p>
-        <p>Received certificates in Software Development and MySQL.</p>
-        <p>Currently enrolled in Web Development course via eCornell.</p>
-        <p>My current tech stack includes HTML, CSS, JavaScript, Spring Boot, MySQL, and Java.</p>
-    </div>
-    <img src="/imgs/schooling.png" alt="">
-</section>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4 class="secondary-text">© Blake Printy</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="secondary-text">My Links</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="secondary-text">Projects</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="">Test</a>
+                    </li>
+                    <li>
+                        <a href="">GymJourney</a>
+                    </li>
+                    <li>
+                        <a href="">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="">More...</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="secondary-text">Certificates</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="">Web Design</a>
+                    </li>
+                    <li>
+                        <a href="">SQL</a>
+                    </li>
+                    <li>
+                        <a href="">Software Development</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-<section class="colored-background flex">
-    <div class="section-container">
-        <img src="/imgs/Certificates.png" alt="" class="certificate">
-    </div>
-    <div class="section-container">
-        <h1>Coding Bootcamp</h1>
-        <p>Enrolled and completed multiple coding bootcamps, specializing in Web Development and MySQL.</p>
-        <p>Worked solo as well as creating projects in cross-functional teams and presenting to companies including JP Morgan Chase.</p>
-        <p>Currently enrolled in Web Development course via eCornell.</p>
-    </div>
-</section>
 
-<section class="dark-background flex" id="tech">
-    <div class="section-container">
-        <h1>Tech Stack</h1>
-        <p>I'm a full-stack developer focused on building clean, functional web applications.</p>
-        <p>I work with HTML, CSS, and JavaScript to create responsive user interfaces, while using Java and Spring Boot to build powerful back-end systems.</p>
-        <p>With MySQL for database management, I develop complete applications that connect the user experience with reliable server-side logic and structured data.</p>
-    </div>
-    <div class="section-container">
-        <img src="/imgs/TechStack.png" alt="">
-    </div>
-</section>
-
-<section class="white-background flex" id="projects">
-    <div class="section-container">
-        <h1>GymJourney</h1>
-        <p>Comprehensive platform for users to track their weight, set goals, and make regular updates to their progress.</p>
-        <p>Users can conveniently log their workouts, recording details such as the exercises performed, sets, reps and weight.</p>
-        <p>GymJourney is developed with HTML, CSS, JavaScript for the front-end, Java and Spring Boot on the back-end, and MySQL for database management.</p>
-        <a href="https://diligent-victory-production-fef8.up.railway.app/" target="_blank">
-            <button>Visit Site</button>
-        </a>
-        <!-- <a href="">
-            <button>View Code</button>
-        </a> -->
-    </div>
-    <div class="section-container">
-        <img src="/imgs/GymJourney.png" alt="" class="project-img">
-    </div>
-</section>
-
-<section class="primary-background flex">
-    <div class="section-container">
-        <h1>Album Songs</h1>
-        <p>Group project from WeCanCodeIT working alongside group members to design and develop web application following project requirements.</p>
-        <!-- <a href="">
-            <button>View Demo</button>
-        </a> -->
-        <a href="https://github.com/BlakePrinty/album-songs-baamp" target="_blank">
-            <button>View Code</button>
-        </a>
-    </div>
-    <div class="section-container">
-        <h1>HabiTrack</h1>
-        <p>Web application allowing users to create habits they either would like to maintain or eliminate. Users are able to track whether they did or did not do the habit they chose to track.</p>
-        <p>Group project from WeCanCodeIT working alongside group members to design and develop web application following project requirements.</p>
-        <!-- <a href="">
-            <button>View Demo</button>
-        </a> -->
-        <a href="https://github.com/BlakePrinty/habitrack1" target="_blank">
-            <button>View Code</button>
-        </a>
-    </div>
-</section>
-
-<section class="colored-background flex">
-    <div class="section-container">
-        <h1>PokeDex</h1>
-        <p>Front end website utilizing the PokeAPI</p>
-        <a href="https://blakeprinty.github.io/Pokedex/" target="_blank">
-            <button>View Demo</button>
-        </a>
-        <a href="https://github.com/BlakePrinty/Pokedex" target="_blank">
-            <button>View Code</button>
-        </a>
-    </div><div class="section-container">
-        <h1>WordleSolver</h1>
-        <p>Java project created to solve wordle everytime!</p>
-        <!-- <a href="">
-            <button>View Demo</button>
-        </a> -->
-        <a href="https://github.com/BlakePrinty/WordleSolver-Console" target="_blank">
-            <button>View Code</button>
-        </a>
-    </div>
-</section>
-
-<section class="dark-background flex">
-    <div class="section-container">
-        <img src="/imgs/cuisinescene.png" alt="" class="project-img">
-    </div>
-    <div class="section-container">
-        <h1>The Cuisine Scene</h1>
-        <p>Web application allowing users to leave ratings and write reviews for restaurants about their experience at the establishment.</p>
-        <p>Group project from WeCanCodeIT working alongside group members to design and develop web application following project requirements.</p>
-        <!-- <a href="">
-            <button>View Demo</button>
-        </a> -->
-        <a href="https://github.com/BlakePrinty/review-site-restaurant-review" target="_blank">
-            <button>View Code</button>
-        </a>
-    </div>
-</section>
-
-<!--
-<section class="white-background flex">
-    <div class="section-container">
-        <h1>Album Songs</h1>
-        <p>Group project from WeCanCodeIT working alongside group members to design and develop web application following project requirements.</p>
-        <a href="">
-            <button>View Demo</button>
-        </a>
-        <a href="https://github.com/BlakePrinty/album-songs-baamp" target="_blank">
-            <button>View Code</button>
-        </a>
-    </div>
-</section>
--->
-
-<section class="colored-background flex" id="contact">
-    <div class="section-container">
-        <h1>Contact Me</h1>
-        <ul class="contact-links">
-            <li>
-                <a href="" class="flex">
-                    <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M3 24h19v-23h-1v22h-18v1zm17-24h-18v22h18v-22zm-3 17h-12v1h12v-1zm0-3h-12v1h12v-1zm0-3h-12v1h12v-1zm-7.348-3.863l.948.3c-.145.529-.387.922-.725 1.178-.338.257-.767.385-1.287.385-.643 0-1.171-.22-1.585-.659-.414-.439-.621-1.04-.621-1.802 0-.806.208-1.432.624-1.878.416-.446.963-.669 1.642-.669.592 0 1.073.175 1.443.525.221.207.386.505.496.892l-.968.231c-.057-.251-.177-.449-.358-.594-.182-.146-.403-.218-.663-.218-.359 0-.65.129-.874.386-.223.258-.335.675-.335 1.252 0 .613.11 1.049.331 1.308.22.26.506.39.858.39.26 0 .484-.082.671-.248.187-.165.322-.425.403-.779zm3.023 1.78l-1.731-4.842h1.06l1.226 3.584 1.186-3.584h1.037l-1.734 4.842h-1.044z"/></svg>
-                    <h2>My Resume</h2>
-                </a>
-            </li>
-            <li>
-                <a href="" class="flex">
-                    <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    <h2>/BlakePrinty</h2>
-                </a>
-            </li>
-            <li>
-                <a href="" class="test flex">
-                    <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
-                    <h2>/in/blake-printy</h2>
-                </a>
-            </li>
-            <li>
-                <a href="" class="flex">
-                    <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
-                    <h2>Blakehprinty@gmail.com</h2>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <img src="/imgs/ContactLinks.png" alt="">
-</section>
-
-<footer class="dark-background flex">
-    <div>
-        <p>© 2026 Blake Printy</p>
-    </div>
-</footer>
-
+<script src="javascript/navigation.js"></script>
 </body>
 </html>

@@ -4,10 +4,12 @@
     box-sizing: border-box;
     font-family: 'SF UI Text Regular', Arial, Helvetica, sans-serif;
     color: black;
+    scroll-behavior: smooth;
 }
 
 :root {
     --primary: #6466D1;
+    --primary: #5a39ff;
     --secondary: #1A1E3D;
     --dark: #59607B;
     --regular: #8086A6;
@@ -65,7 +67,7 @@ p {
 
 a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--primary);
     transition: .2s ease-in-out;
 }
@@ -76,6 +78,11 @@ li {
 
 a:hover {
     color: var(--dark);
+}
+
+button {
+    background: transparent;
+    border: none;
 }
 
 .tiny {
@@ -104,7 +111,7 @@ nav {
     align-items: center;
 
     width: 100%;
-    padding: 4rem 6rem;
+    padding: 4rem 6rem 1rem;
     
     background: transparent;
 }
@@ -217,7 +224,97 @@ nav {
 /* STYLING FOR THE HOME PAGE HEADER */
 
 header {
-    height: 70vh;
+    border-bottom: 2px solid var(--secondary);
+    box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.header-img {
+    height: auto;
+    width: auto;
+}
+
+/* STYLING FOR SECTION */
+
+section {
+    justify-content: center;
+    align-items: center;
+
+    padding: 4rem;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+
+    width: 60rem;
+}
+
+.spacer-bar {
+    flex: 1;
+    height: 1px;
+    background-color: var(--dark);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.project-card {
+    border: 2px solid var(--light);
+    border-radius: .5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: .2s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-preview {
+    height: 10rem;
+    border-bottom: 1px solid var(--light);
+}
+
+#bf-preview {
+    background-image: url('/assets/images/bf-preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pkmn-preview {
+    background-image: url('/assets/images/pokeapi-preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#wordle-preview {
+    background-image: url('/assets/images/wordle-preview.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-desc {
+    padding: 1rem;
+}
+
+.project-desc h4 {
+    margin-bottom: .5rem;
 }
 
 /* STYLING FOR THE FOOTER */
@@ -242,6 +339,7 @@ footer {
 }
 
 .footer-list li {
+    margin: 0.25rem 0;
     margin-top: 1.25rem;
 }
 

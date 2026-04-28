@@ -85,6 +85,10 @@ button {
     border: none;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .tiny {
     font-size: 14px;
 }
@@ -303,7 +307,42 @@ section {
 }
 
 #wordle-preview {
-    background-image: url('/assets/images/wordle-preview.webp');
+    background-image: url('/assets/images/wordle-preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#album-preview {
+    background-image: url('/assets/images/albumsongs-preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#restaurant-preview {
+    background-image: url('/assets/images/restaurant-preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#habit-preview {
+    background-image: url('/assets/images/habit-preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#web-design-preview {
+    background-image: url('/assets/images/ecornell.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sql-preview, #software-dev-preview {
+    background-image: url('/assets/images/wecancodeit.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

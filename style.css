@@ -15,10 +15,20 @@
     --regular: #8086A6;
     --light: #E6E7F0;
     --white: #F5F7FB;
+    --primary-red: #ef4444;
+    --secondary-red: #991b1b;
 }
 
 .heavy {
     font-family: 'SF UI Text Bold';
+}
+
+.primary-red-text {
+    color: var(--primary-red);
+}
+
+.secondary-red-text {
+    color: var(--secondary-red);
 }
 
 .primary-text {
@@ -251,7 +261,7 @@ section {
     justify-content: center;
     align-items: center;
 
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .container {
@@ -285,67 +295,52 @@ section {
 
 .project-card:hover {
     transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.tech-card:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
 }
 
 .project-preview {
     height: 10rem;
     border-bottom: 1px solid var(--light);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #bf-preview {
     background-image: url('/assets/images/bf-preview.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #pkmn-preview {
     background-image: url('/assets/images/pokeapi-preview.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #wordle-preview {
     background-image: url('/assets/images/wordle-preview.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #album-preview {
     background-image: url('/assets/images/albumsongs-preview.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #restaurant-preview {
     background-image: url('/assets/images/restaurant-preview.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #habit-preview {
     background-image: url('/assets/images/habit-preview.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #web-design-preview {
     background-image: url('/assets/images/ecornell.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #sql-preview, #software-dev-preview {
     background-image: url('/assets/images/wecancodeit.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .project-desc {
@@ -356,6 +351,47 @@ section {
     margin-bottom: .5rem;
 }
 
+.tech-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    
+    margin: 2rem 0 0;
+}
+
+.tech-card {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    gap: .5rem;
+    border: 2px solid var(--light);
+    border-radius: .5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: .2s ease;
+    overflow: hidden;
+}
+
+.tech-logo {
+    height: 2rem;
+    width: auto;
+    fill: var(--primary-red);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    margin: 2rem 0 0;
+
+    width: 100%;
+}
+
+.about-content {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 /* STYLING FOR THE FOOTER */
 
 footer {
@@ -364,7 +400,7 @@ footer {
     justify-content: center;
     align-items: center;
 
-    background-color: var(--primary);
+    background-color: var(--secondary);
 
     width: 100%;
     padding: 4rem 6rem;

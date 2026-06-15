@@ -5,336 +5,453 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blake Printy | Web Developer</title>
     <link rel="icon" href="/assets/images/Logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/assets/fonts/style.css">
 </head>
 <body>
 
-    <nav class="flex-row">
-        <div class="nav-container flex-row">
-            <a href="/">
-                <img src="/assets/images/Logo.png" alt="BP Logo" class="nav-logo">
-            </a>
-            <div class="nav-bars flex-col" id="nav-bars">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <div class="nav-menu">
-                <ul class="nav-menu-links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#technologies">Technologies</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certificates">Certificates</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav class="flex-row align-center width">
+        <ul class="flex-row align-center gap-one">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#tech">Tech</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <a href="#contact">
+            <button class="light-button">Get in touch</button>
+        </a>
     </nav>
 
-    <header>
-        <div class="header-container flex-row">
-            <img src="/assets/images/me.png" alt="Blake Printy" class="header-img">
+    <header class="flex-col align-start gap-four width">
+        <div class="flex-col">
+            <h4>Hi, I'm Blake</h4>
+            <h1 class="giant-text">Full Stack Web Developer using <span class="giant-text primary-text">Java</span> on the Spring Framework<span class="giant-text primary-text">.</span></h1>
+        </div>
+        <div class="flex-row align-center gap-one">
+            <a href="#contact">
+                <button class="dark-button">Contact Me</button>
+            </a>
+            <a href="https://github.com/BlakePrinty" target="_blank">
+                <img src="/assets/images/GitHub.png" alt="GitHub Logo" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/blake-printy/" target="_blank">
+                <img src="/assets/images/LinkedIn.png" alt="LinkedIn Logo" class="social-icon">
+            </a>
         </div>
     </header>
 
-    <section class="flex-row" id="about">
-        <div class="container flex-col">
-            <div class="header-container flex-row">
-                <div class="spacer-bar"></div>
-                <h4 class="tiny dark-text">ABOUT ME</h4>
-                <div class="spacer-bar"></div>
-            </div>
-
-            <div class="about-container">
-                <div class="about-content flex-col">
-                    <h1 class="heavy primary-text">Blake Printy</h1>
-                    <h4 class="dark-text">Full Stack Web Developer</h4>
-                </div>
-                <div class="about-content flex-col">
-                    <p class="dark-text">
-                        Full stack web developer with hands on experience 
-                        building responsive web applications using Java, 
-                        JavaScript, and Spring Boot. Strong foundation in 
-                        object-oriented programming, RESTful API development, 
-                        and relational databases. Certifications in Software 
-                        Development and SQL, with additional training in Web 
-                        Design through eCornell.
+    <section class="flex-col align-start gap-two width" id="about">
+        <h2>About Me</h2>
+        <div class="grid-container grid-large-right gap-two" id="background">
+            <img src="/assets/images/me.png" alt="Blake Printy Profile Picture" class="full-width">
+            <div class="flex-col gap-one">
+                <div class="flex-col justify-end gap-half">
+                    <h4>Background</h4>
+                    <p>
+                        I'm a full stack developer based in Connecticut. I enjoy building web applications from start to finish 
+                        — designing REST APIs, modeling databases, and bringing it all together with server-side rendered 
+                        frontends using HTML, CSS, and JavaScript.
+                    </p>
+                    <p>
+                        My go to stack is Java using Spring Boot, and I've put it to use in real projects including BullFit, a 
+                        production fitness tracking web app live at <a href="https://bullfitapp.com/" class="primary-text" target="_blank">BullFitApp.com</a>, where I 
+                        built everything from user authentication to community features including sharing and commenting others 
+                        workout routines and recommendations.
                     </p>
                 </div>
+                <a href="#contact">
+                    <button class="light-button">Get in touch</button>
+                </a>
             </div>
-            
         </div>
-    </section>
+        <div class="flex-col gap-one full-width">
+            <h4>Education & Certifications</h4>
 
-    <section class="flex-row" id="technologies">
-        <div class="container flex-col">
-            <div class="header-container flex-row">
-                <div class="spacer-bar"></div>
-                <h4 class="tiny dark-text">TECHNOLOGIES</h4>
-                <div class="spacer-bar"></div>
-            </div>
-            <div class="tech-container">
-                <div class="tech-card flex-row">
-                    <div class="tech-logo">
-                        <img src="/assets/images/HTML5.png" alt="" class="tech-logo">
+            <div class="grid-container grid-two gap-one" id="education">
+                <a href="" target="_blank">
+                    <div class="card flex-row justify-between align-center">
+                        <div class="flex-col gap-half">
+                            <p>Web Design</p>
+                            <p class="gray-text small-text">April 2026 — May 2026</p>
+                        </div>
+                        <div>
+                            <img src="/assets/images/ecornell.png" alt="eCornell Logo" class="qualification-img">
+                        </div>
                     </div>
-                    <h4 class="heavy tiny secondary-text">HTML</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <div class="tech-logo">
-                        <img src="/assets/images/CSS3.png" alt="" class="tech-logo">
+                </a>
+                <a href="/oldassets/imgs/SQL-Certificate.png" target="_blank">
+                    <div class="card flex-row justify-between align-center">
+                        <div class="flex-col gap-half">
+                            <p>SQL (All Versions)</p>
+                            <p class="gray-text small-text">April 2023</p>
+                        </div>
+                        <div>
+                            <img src="/assets/images/wecancodeit.png" alt="WeCanCodeIT Logo" class="qualification-img">
+                        </div>
                     </div>
-                    <h4 class="heavy tiny secondary-text">CSS</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/JavaScript.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">JavaScript</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/Java.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">Java</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/MySQL.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">SQL</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/Spring.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">Spring</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/Python.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">Python</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/C++ (CPlusPlus).png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">C++</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/JSON.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">JSON</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/thymeleaf.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">Thymeleaf</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/Gradle.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">Gradle</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/Apache Maven.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">Maven</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/rest-api-icon.webp" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">REST API</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/Hibernate.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">Hibernate</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/Bash.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">Bash</h4>
-                </div>
-                <div class="tech-card flex-row">
-                    <img src="/assets/images/Git.png" alt="" class="tech-logo">
-                    <h4 class="heavy tiny secondary-text">Git</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="flex-row" id="projects">
-        <div class="container flex-col">
-            <div class="header-container flex-row">
-                <div class="spacer-bar"></div>
-                <h4 class="tiny dark-text">FEATURED PROJECTS</h4>
-                <div class="spacer-bar"></div>
-            </div>
-            <div class="projects-container">
-                <div class="project-card">
-                    <a href="">
-                        <div class="project-preview" id="bf-preview"></div>
-                    </a>
-                    <div class="project-desc">
-                        <h4 class="heavy secondary-text">BullFit</h4>
-                        <a href="/" class="primary-text">BullFitApp.com</a>
+                </a>
+                <a href="/oldassets/imgs/certificate.pdf" target="_blank">
+                    <div class="card flex-row justify-between align-center">
+                        <div class="flex-col gap-half">
+                            <p>Software Development</p>
+                            <p class="gray-text small-text">May 2022 — August 2022</p>
+                        </div>
+                        <div>
+                            <img src="/assets/images/wecancodeit.png" alt="WeCanCodeIT Logo" class="qualification-img">
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <a href="">
-                        <div class="project-preview" id="pkmn-preview"></div>
-                    </a>
-                    <div class="project-desc">
-                        <h4 class="heavy secondary-text">Pokedex</h4>
-                        <a href="/" class="primary-text">BlakePrinty.com/Pokedex</a>
+                </a>
+                <div class="card flex-row justify-between align-center">
+                    <div class="flex-col gap-half">
+                        <p>Computer Science</p>
+                        <p class="gray-text small-text">August 2020 — December 2021</p>
                     </div>
-                </div>
-                <div class="project-card">
-                    <a href="">
-                        <div class="project-preview" id="wordle-preview"></div>
-                    </a>
-                    <div class="project-desc">
-                        <h4 class="heavy secondary-text">WordleSolver</h4>
-                        <a href="/" class="primary-text">Source Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <a href="">
-                        <div class="project-preview" id="album-preview"></div>
-                    </a>
-                    <div class="project-desc">
-                        <h4 class="heavy secondary-text">Album Songs</h4>
-                        <a href="/" class="primary-text">Source Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <a href="">
-                        <div class="project-preview" id="restaurant-preview"></div>
-                    </a>
-                    <div class="project-desc">
-                        <h4 class="heavy secondary-text">Restaurant Reviews</h4>
-                        <a href="/" class="primary-text">Source Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <a href="">
-                        <div class="project-preview" id="habit-preview"></div>
-                    </a>
-                    <div class="project-desc">
-                        <h4 class="heavy secondary-text">Habit Tracking</h4>
-                        <a href="/" class="primary-text">Source Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- 
-    <section class="flex-row" id="certificates">
-        <div class="container flex-col">
-            <div class="header-container flex-row">
-                <div class="spacer-bar"></div>
-                <h4 class="tiny dark-text">CERTIFICATES</h4>
-                <div class="spacer-bar"></div>
-            </div>
-            <div class="projects-container">
-                <div class="project-card">
                     <div>
-                        <div class="project-preview" id="web-design-preview"></div>
-                    </div>
-                    <div class="project-desc">
-                        <h4 class="heavy secondary-text">Web Design</h4>
-                        <p class="primary-text">eCornell</p>
-                        <p class="dark-text tiny">April 2026 - In progress</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <a href="/assets/documents/SQL-Certificate.png" target="_blank">
-                        <div class="project-preview" id="sql-preview"></div>
-                    </a>
-                    <div class="project-desc">
-                        <h4 class="heavy secondary-text">SQL (All Versions)</h4>
-                        <p class="primary-text">WeCanCodeIT</p>
-                        <p class="dark-text tiny">April 2023</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <a href="/assets/documents/certificate.pdf" target="_blank">
-                        <div class="project-preview" id="software-dev-preview"></div>
-                    </a>
-                    <div class="project-desc">
-                        <h4 class="heavy secondary-text">Software Development</h4>
-                        <p class="primary-text">WeCanCodeIT</p>
-                        <p class="dark-text tiny">May 2022 - August 2022</p>
+                        <img src="/assets/images/umbc.png" alt="UMBC Logo" class="qualification-img">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="flex-row" id="contact">
-        <div class="container flex-col">
-            <div class="header-container flex-row">
-                <div class="spacer-bar"></div>
-                <h4 class="tiny dark-text">CONTACT</h4>
-                <div class="spacer-bar"></div>
+    <section class="flex-col align-start gap-two width" id="projects">
+        <h2>Projects</h2>
+        <div class="grid-container grid-two gap-one" id="featured-projects">
+            <div class="card flex-col align-center gap-one">
+                <img src="/assets/images/bf-preview.png" alt="BullFit Logo" class="full-width">
+                <div class="flex-col gap-half">
+                    <h4>BullFit</h4>
+                    <p class="gray-text">
+                        Production fitness tracking application where users can log strength training and cardio sessions, monitor their weight over time, 
+                        and share workout routines with the community through BullSplits.
+                    </p>
+                </div>
+                <div class="flex-row gap-one full-width">
+                    <a href="https://bullfitapp.com/" target="_blank">
+                        <button class="dark-button">Website</button>
+                    </a>
+                    <a href="https://github.com/BlakePrinty" target="_blank">
+                        <button class="dark-button">GitHub</button>
+                    </a>
+                </div>
             </div>
-            
+            <div class="card flex-col align-center gap-one">
+                <img src="/assets/images/apex-api-img.png" alt="ApexLegends API Logo" class="full-width">
+                <div class="flex-col gap-half full-width">
+                    <h4>Apex Legends REST API</h4>
+                    <p class="gray-text">
+                        REST API for querying Apex Legends character data. 
+                        Supports retrieving all legends or individual entries with detailed stats, abilities, evo shield upgrades, and character images. 
+                    </p>
+                </div>
+                <div class="flex-row gap-one full-width">
+                    <a href="https://www.blakeprinty.com/ApexLegends" target="_blank">
+                        <button class="dark-button">Website</button>
+                    </a>
+                    <a href="https://github.com/BlakePrinty/ApexLegends" target="_blank">
+                        <button class="dark-button">GitHub</button>
+                    </a>
+                    <a href="https://github.com/BlakePrinty/ApexLegendsAPI" target="_blank">
+                        <button class="dark-button">API GitHub</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h3>More Projects</h3>
+        <div class="grid-container grid-three gap-one" id="more-projects">
+            <div class="card flex-col align-center gap-one">
+                <img src="/assets/images/pokeapi-preview.png" alt="PokeAPI Logo" class="full-width">
+                <div class="flex-col gap-half">
+                    <h4>Pokedex</h4>
+                    <p class="gray-text">
+                        Frontend web application that consumes the public PokeAPI to display stats, types, and details for all 151 original Generation 1 Pokémon.
+                    </p>
+                </div>
+                <div class="flex-row gap-one full-width">
+                    <a href="https://www.blakeprinty.com/Pokedex/" target="_blank">
+                        <button class="dark-button">Website</button>
+                    </a>
+                    <a href="https://github.com/BlakePrinty/Pokedex" target="_blank">
+                        <button class="dark-button">GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card flex-col align-center gap-one">
+                <img src="/assets/images/habit-preview.png" alt="HabiTrack Logo" class="full-width">
+                <div class="flex-col gap-half">
+                    <h4>HabiTrack</h4>
+                    <p class="gray-text">
+                        Habit tracking application built as part of a team during the WeCanCodeIT bootcamp. Presented in a live demo to industry professionals including representatives from JP Morgan Chase.
+                    </p>
+                </div>
+                <div class="flex-row gap-one full-width">
+                    <a href="https://github.com/BlakePrinty/habitrack1" target="_blank">
+                        <button class="dark-button">GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card flex-col align-center gap-one">
+                <img src="/assets/images/albumsongs-preview.png" alt="AlbumSongs Logo" class="full-width">
+                <div class="flex-col gap-half">
+                    <h4>Album Songs</h4>
+                    <p class="gray-text">
+                        Group project from WeCanCodeIT for browsing and reviewing music albums and their tracks, built collaboratively as part of the bootcamp curriculum.
+                    </p>
+                </div>
+                <div class="flex-row gap-one full-width">
+                    <a href="https://github.com/BlakePrinty/album-songs-baamp" target="_blank">
+                        <button class="dark-button">GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card flex-col align-center gap-one">
+                <img src="/assets/images/restaurant-preview.png" alt="Restaurant Review Logo" class="full-width">
+                <div class="flex-col gap-half">
+                    <h4>Restaurants</h4>
+                    <p class="gray-text">
+                        Group project from WeCanCodeIT focused on restaurant discovery and management, built collaboratively to practice full stack development and team-based workflows.
+                    </p>
+                </div>
+                <div class="flex-row gap-one full-width">
+                    <a href="https://github.com/BlakePrinty/review-site-restaurant-review" target="_blank">
+                        <button class="dark-button">GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card flex-col align-center gap-one">
+                <img src="/assets/images/wordle-preview.png" alt="Wordle Solver Logo" class="full-width">
+                <div class="flex-col gap-half">
+                    <h4>Wordle Solver</h4>
+                    <p class="gray-text">
+                        Java console application that solves Wordle puzzles by iterating over a master word list and systematically eliminating candidates based on guess feedback to narrow down the answer.
+                    </p>
+                </div>
+                <div class="flex-row gap-one full-width">
+                    <a href="https://github.com/BlakePrinty/WordleSolver-Console" target="_blank">
+                        <button class="dark-button">GitHub</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-container">
-            <div>
-                <h4 class="heavy white-text">© Blake Printy</h4>
-                <ul class="footer-list">
-                    <li>
-                        <p class="white-text">blakehprinty@gmail.com</p>
-                    </li>
-                    <li>
-                        <p class="white-text">me@blakeprinty.com</p>
-                    </li>
-                </ul>
+    <section class="flex-col align-start gap-two width" id="tech">
+        <h2>Technologies</h2>
+        <div class="flex-col gap-one full-width">
+            <div class="flex-col gap-half">
+                <h4>Languages</h4>
+                <div class="flex-row gap-one">
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/Java.png" alt="Java Logo">
+                        <h4>Java</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/JavaScript.png" alt="JavaScript Logo">
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/HTML5.png" alt="HTML Logo">
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/CSS3.png" alt="CSS Logo">
+                        <h4>CSS</h4>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4 class="heavy white-text">My Links</h4>
-                <ul class="footer-list">
-                    <li>
-                        <a href="">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="">Resume</a>
-                    </li>
-                </ul>
+            <div class="flex-col gap-half">
+                <h4>Frameworks & Libraries</h4>
+                <div class="flex-row gap-one">
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/Spring.png" alt="Spring Boot Logo">
+                        <h4>Spring Boot</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/thymeleaf.png" alt="Thymeleaf Logo">
+                        <h4>Thymeleaf</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/spring-security.png" alt="Spring Security Logo">
+                        <h4>Spring Security</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/Hibernate.png" alt="Hibernate Logo">
+                        <h4>Hibernate</h4>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4 class="heavy white-text">Projects</h4>
-                <ul class="footer-list">
-                    <li>
-                        <a href="">GymJourney</a>
-                    </li>
-                    <li>
-                        <a href="">Album Songs</a>
-                    </li>
-                    <li>
-                        <a href="">Wordle Solver</a>
-                    </li>
-                    <li>
-                        <a href="">HabiTrack</a>
-                    </li>
-                    <li>
-                        <a href="">Cuisine Scene</a>
-                    </li>
-                    <li>
-                        <a href="">More...</a>
-                    </li>
-                </ul>
+            <div class="flex-col gap-half">
+                <h4>Database</h4>
+                <div class="flex-row gap-one">
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/MySQL.png" alt="MySQL Logo">
+                        <h4>MySQL</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/postgresql.png" alt="PostgreSQL Logo">
+                        <h4>PostgreSQL</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/mongodb.png" alt="MongoDB Logo">
+                        <h4>MongoDB</h4>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4 class="heavy white-text">Certificates</h4>
-                <ul class="footer-list">
-                    <li>
-                        <a href="">Web Design</a>
-                    </li>
-                    <li>
-                        <a href="">SQL</a>
-                    </li>
-                    <li>
-                        <a href="">Software Development</a>
-                    </li>
-                </ul>
+            <div class="flex-col gap-half">
+                <h4>Concepts & Architecture</h4>
+                <div class="flex-row gap-one">
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/rest-api-icon.webp" alt="REST API Logo">
+                        <h4>REST API</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/jwt.png" alt="JWT Logo">
+                        <h4>JWT</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/3d.png" alt="MVC Logo">
+                        <h4>MVC</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/web-developer.png" alt="OOP Logo">
+                        <h4>OOP</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/ui-design.png" alt="Responsive Design Logo">
+                        <h4>Responsive Design</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-col gap-half">
+                <h4>Tools & Workflow</h4>
+                <div class="flex-row gap-one">
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/Git.png" alt="Git Logo">
+                        <h4>Git</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/docker.png" alt="Docker Logo">
+                        <h4>Docker</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/Apache Maven.png" alt="Maven">
+                        <h4>Maven</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/flyway.png" alt="Flyway">
+                        <h4>Flyway</h4>
+                    </div>
+                    <div class="tech-card flex-col gap-one justify-center align-center">
+                        <img src="/assets/images/scrum.png" alt="Agile/Scrum Logo">
+                        <h4>Agile / Scrum</h4>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+
+
+    <section class="flex-col align-start gap-two width" id="contact">
+        <h2>Contact</h2>
+
+
+        <div class="grid-container grid-large-right gap-two" id="contact-mobile">
+            <div class="flex-col gap-one">
+                <h4>My Links</h4>
+                <div class="flex-col gap-half">
+                    <a href="/assets/documents/Blake Printy - Resume.pdf" target="_blank">
+                        <div class="flex-row gap-half align-center">
+                            <div>
+                                <img src="/assets/images/curriculum-vitae.png" alt="Resume Icon" class="social-icon">
+                            </div>
+                            <p>My Resume</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/BlakePrinty" target="_blank">
+                        <div class="flex-row gap-half align-center">
+                            <div>
+                                <img src="/assets/images/GitHub.png" alt="GitHub Icon" class="social-icon">
+                            </div>
+                            <p>/BlakePrinty</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/blake-printy/" target="_blank">
+                        <div class="flex-row gap-half align-center">
+                            <div>
+                                <img src="/assets/images/LinkedIn.png" alt="LinkedIn Icon" class="social-icon">
+                            </div>
+                            <p>/in/blake-printy</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="flex-row gap-half align-center">
+                            <div>
+                                <img src="/assets/images/email.png" alt="Email Icon" class="social-icon">
+                            </div>
+                            <p>blakehprinty@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-col gap-one">
+                <h4>Contact Me Directly</h4>
+                <form action="https://formspree.io/f/mlgknbnj" method="POST" class="flex-col gap-one">
+                    <input 
+                        type="text" 
+                        name="name" 
+                        placeholder="Your Name" 
+                        required 
+                        class="contact-input"
+                    />
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Your Email" 
+                        required 
+                        class="contact-input"
+                    />
+                    <textarea 
+                        name="message" 
+                        placeholder="Your Message" 
+                        rows="5" 
+                        required 
+                        class="contact-input"
+                    ></textarea>
+                    <button type="submit" class="dark-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="flex-col align-center gap-one">
+        <ul class="flex-row align-center gap-one">
+            <li>
+                <a href="https://github.com/BlakePrinty" target="_blank">
+                    <img src="/assets/images/GitHub.png" alt="GitHub Icon" class="social-icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/blake-printy/" target="_blank">
+                    <img src="/assets/images/LinkedIn.png" alt="LinkedIn Icon" class="social-icon">
+                </a>
+            </li>
+        </ul>
+        <p class="black-text small-text">© 2026 Blake Printy. All rights reserved.</p>
     </footer>
 
 
-<script src="javascript/navigation.js"></script>
 </body>
 </html>

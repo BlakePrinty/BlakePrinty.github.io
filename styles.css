@@ -398,4 +398,9 @@ textarea.contact-input {
     #contact-mobile {
         grid-template-columns: 1fr;
     }
+
+        
+    .qualification-img {
+        width: 100%;
+    }
 }

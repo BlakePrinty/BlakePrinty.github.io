@@ -367,8 +367,10 @@ textarea.contact-input {
 }
 
 @media only screen and (max-width: 800px) {
+    nav a {
+        display: none;
+    }
 
-        
     header {
         padding: 4rem 1rem;
     }

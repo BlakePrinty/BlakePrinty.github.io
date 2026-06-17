@@ -367,6 +367,14 @@ textarea.contact-input {
 }
 
 @media only screen and (max-width: 800px) {
+    nav a {
+        display: none;
+    }
+
+    header {
+        padding: 4rem 1rem;
+    }
+
     #background {
         display: flex;
         flex-direction: column;
@@ -399,8 +407,12 @@ textarea.contact-input {
         grid-template-columns: 1fr;
     }
 
-        
     .qualification-img {
         width: 100%;
+    }
+        
+    .giant-text {
+        font-size: 56px;
+        font-family: 'SF UI Text Heavy', Arial, Helvetica, sans-serif;
     }
 }
